@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/hyundaib/public_html/
+    - /bin/find $DEPLOYPATH -mindepth 1 ! -name 'uploads' -exec rm -rf {} \;
+    - /bin/cp -R * $DEPLOYPATH
