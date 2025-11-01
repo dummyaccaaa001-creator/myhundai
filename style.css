@@ -133,17 +133,22 @@ header .logo {
 }
 
 .car-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+  place-items: center; /* ✅ tambahan biar semua card rata tengah sempurna */
 }
+
 
 .car {
   background: white;
   border-radius: 12px;
   padding: 1rem;
-  width: 280px;
+  width: 100%;
+  max-width: 280px; /* batas lebar tiap card */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -152,6 +157,7 @@ header .logo {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
+
 
 .car img {
   width: 100%;
