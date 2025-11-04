@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Bagian Beranda -->
+  <url>
+    <loc>https://hyundaibsd.city/</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Bagian Model -->
+  <url>
+    <loc>https://hyundaibsd.city/#mobil</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Bagian Promo -->
+  <url>
+    <loc>https://hyundaibsd.city/#promo</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Bagian Kontak -->
+  <url>
+    <loc>https://hyundaibsd.city/#kontak</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
