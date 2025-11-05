@@ -201,3 +201,72 @@ footer {
   width: 35px;
   height: 35px;
 }
+.hero {
+  position: relative;
+  text-align: center;
+  color: #002368; /* Warna font utama: biru Hyundai */
+}
+.hero {
+  position: relative;
+  text-align: center;
+  color: white; /* warna isi putih */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Isi huruf putih dengan outline biru tipis */
+.hero-text h2,
+.hero-text p,
+.hero-text a {
+  color: #ffffff; /* isi teks putih */
+  -webkit-text-stroke: 0.35px #002368; /* outline biru sangat halus */
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #002368;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  -webkit-text-stroke: 0; /* tombol tanpa outline */
+}
+
+.cta-btn:hover {
+  background-color: #0050c8;
+}
+
+
+
+
+
