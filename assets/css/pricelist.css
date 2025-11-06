@@ -1,0 +1,191 @@
+/* ==========================================================
+   PRICELIST.CSS (Isolated) - Hyundai BSD City Official
+   ========================================================== */
+
+.pricelist-page main {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #fff;
+  padding-bottom: 50px;
+  color: #111;
+}
+
+/* Breadcrumb */
+.pricelist-page .bg-light-grey {
+  background-color: #f7f8fa;
+  padding: 10px 0;
+}
+
+.pricelist-page .breadcrumb {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.pricelist-page .breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.pricelist-page .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.pricelist-page .breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+  margin: 0 8px;
+  color: #777;
+}
+
+/* Grid */
+.pricelist-page .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricelist-page .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pricelist-page .col-12 {
+  width: 100%;
+}
+
+.pricelist-page .col-md-4 {
+  flex: 1 1 calc(33.333% - 20px);
+}
+
+@media (max-width: 992px) {
+  .pricelist-page .col-md-4 {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .pricelist-page .col-md-4 {
+    flex: 1 1 100%;
+  }
+}
+
+/* Kartu Mobil */
+.pricelist-page .hvr-glow {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  box-shadow: 0 0 0 transparent;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e5e5;
+}
+
+.pricelist-page .hvr-glow:hover {
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Gambar mobil */
+.pricelist-page .pricelist-car-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.pricelist-page .pricelist-car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.pricelist-page .pricelist-car-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Nama mobil */
+.pricelist-page .pricelist-car-name h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #007bff;
+  font-weight: 700;
+  margin: 8px 0 12px;
+  text-transform: uppercase;
+}
+
+/* Baris harga */
+.pricelist-page .pricelist-car-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.pricelist-page .pricelist-car-list h1 {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #111;
+  font-weight: 500;
+}
+
+/* Catatan tambahan */
+.pricelist-page .d-flex.pt-2 h1 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #222;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Footnote */
+.pricelist-page .bg-cream {
+  background-color: #faf7f2;
+  padding: 15px 0;
+}
+
+.pricelist-page .pricelist-footnote ul {
+  margin-left: 1.2rem;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.pricelist-page .pricelist-footnote li {
+  margin-bottom: 5px;
+}
+
+/* Utilities */
+.pricelist-page .text-black { color: #111 !important; }
+.pricelist-page .text-skyblue { color: #007bff !important; }
+.pricelist-page .font-medium { font-weight: 500; }
+.pricelist-page .fw-700 { font-weight: 700; }
+
+/* Animasi */
+.pricelist-page [data-wow-delay] {
+  animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .pricelist-page .pricelist-car-name h1 {
+    font-size: 1rem;
+  }
+  .pricelist-page .pricelist-car-list h1 {
+    font-size: 0.75rem;
+  }
+  .pricelist-page .pricelist-footnote ul {
+    font-size: 0.8rem;
+  }
+}
