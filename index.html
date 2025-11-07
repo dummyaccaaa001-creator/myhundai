@@ -3,23 +3,23 @@
 <head>
   <!-- Metadata dasar -->
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Hyundai BSD City Official: dealer resmi Hyundai di BSD City. Menyediakan penjualan mobil Hyundai, layanan servis, dan suku cadang original." />
+  <meta name="description" content="Hyundai BSD City Official: dealer resmi Hyundai di BSD City. Menyediakan penjualan mobil Hyundai, layanan servis, dan suku cadang original.">
   <meta name="keywords" content="Hyundai Tangerang, Dealer Hyundai Tangerang, Hyundai Tangerang Selatan, Hyundai BSD, Hyundai Serpong, Hyundai Banten, Dealer Resmi Hyundai, Promo Hyundai Tangerang, Harga Hyundai, Hyundai Stargazer, Hyundai Creta, Hyundai Ioniq 5, Hyundai BSD City">
   <meta name="author" content="Hyundai BSD City">
   <meta name="robots" content="index, follow">
 
-<title>Hyundai BSD City Official — Dealer Resmi Hyundai di BSD City</title>
+  <title>Hyundai BSD City Official — Dealer Resmi Hyundai di BSD City</title>
 
-
-
-  <!-- Favicon utama -->
+  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="180x180" href="/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/favicon.png">
 
-  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Dealer Hyundai Tangerang | Hyundai BSD City – Resmi & Terpercaya">
   <meta property="og:description" content="Hyundai BSD City adalah dealer resmi Hyundai untuk wilayah Tangerang, Serpong, dan Banten. Dapatkan penawaran dan promo terbaru mobil Hyundai resmi Indonesia.">
   <meta property="og:image" content="https://hyundaibsd.city/thumbnail-og.jpg">
@@ -28,27 +28,32 @@
   <meta property="og:locale" content="id_ID">
   <meta property="og:site_name" content="Hyundai BSD City">
 
-  <!-- Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dealer Hyundai Tangerang | Hyundai BSD City">
   <meta name="twitter:description" content="Temukan promo, harga, dan model Hyundai terbaru untuk wilayah Tangerang dan sekitarnya hanya di Hyundai BSD City.">
   <meta name="twitter:image" content="https://hyundaibsd.city/thumbnail-og.jpg">
   <meta name="twitter:site" content="@HyundaiBSDCity">
 
-  <!-- Warna tema (Android & Windows) -->
+  <!-- Warna tema -->
   <meta name="theme-color" content="#002368">
   <meta name="msapplication-TileColor" content="#002368">
 
-  <!-- Canonical URL -->
+  <!-- Canonical -->
   <link rel="canonical" href="https://hyundaibsd.city/">
 
-  <!-- Structured Data (JSON-LD untuk SEO lokal) -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AutoDealer",
     "name": "Hyundai BSD City",
-    "image": "https://hyundaibsd.city/thumbnail-og.jpg",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://hyundaibsd.city/thumbnail-og.jpg",
+      "width": 1200,
+      "height": 630
+    },
     "url": "https://hyundaibsd.city/",
     "telephone": "+62 21 533 4999",
     "address": {
@@ -71,24 +76,33 @@
   }
   </script>
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+
+  <!-- JS -->
+  <script src="assets/js/navbar.js" defer></script>
 </head>
+
 
 
 <body>
 
 <!-- Header -->
 <header>
-  <!-- Tombol menu responsif -->
-  <div class="menu-toggle" id="menu-toggle" aria-label="Buka menu navigasi" role="button" tabindex="0">
-    ☰
-  </div>
-
   <img src="ico-logo.avif" alt="Dealer Hyundai BSD City Logo" class="logo">
 
-  <h1 class="site-title">Dealer Resmi Hyundai BSD</h1>
+  <div class="menu-toggle" id="menu-toggle" aria-label="Buka menu navigasi" role="button" tabindex="0">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
   <nav class="navbar" aria-label="Navigasi utama">
     <ul>
@@ -101,6 +115,7 @@
   </nav>
 </header>
 
+
 <main id="home">
   <section class="hero">
     <img src="assets/img/showroom-bsd.jpg" 
@@ -108,7 +123,7 @@
          width="100%" height="auto" loading="lazy">
 
     <div class="hero-text">
-      <h2>Dealer Resmi Hyundai BSD City</h2>
+      <h1>Dealer Resmi Hyundai BSD City</h1>
       <p>Temukan mobil Hyundai impian Anda dengan harga dan promo terbaik di BSD City.</p>
 
       <!-- Alamat Dealer di dalam hero -->
@@ -171,32 +186,8 @@
 </a>
 
 
-  <!-- JavaScript -->
-  <script defer>
-    const toggle = document.getElementById("menu-toggle");
-    const nav = document.querySelector(".navbar ul");
 
-    // Klik tombol menu
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("show");
-    });
 
-    // Akses via keyboard (Enter)
-    toggle.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        nav.classList.toggle("show");
-      }
-    });
-  </script>
 
-  <!-- CSS tambahan kecil -->
-  <style>
-    /* Sembunyikan <h1> visual tapi tetap terbaca mesin pencari */
-    .site-title {
-      position: absolute;
-      left: -9999px;
-      top: -9999px;
-    }
-  </style>
 </body>
 </html>

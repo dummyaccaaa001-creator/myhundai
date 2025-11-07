@@ -1,0 +1,93 @@
+/* ===== NAVBAR RESPONSIVE (menu melayang & rata kiri) ===== */
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between; /* logo kiri, menu kanan */
+    align-items: center;
+    padding: 0.8rem 5vw;
+    height: 70px;
+  }
+
+  header .logo {
+    width: 100px;
+    order: 1;
+  }
+
+  /* ===== TOMBOL HAMBURGER (ANIMASI ☰ → ✕) ===== */
+  .menu-toggle {
+    display: block;
+    width: 28px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+    order: 2;
+    z-index: 1001;
+  }
+
+  .menu-toggle span {
+    background: #002368;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    border-radius: 2px;
+    transition: all 0.35s ease;
+  }
+
+  .menu-toggle span:nth-child(1) { top: 0; }
+  .menu-toggle span:nth-child(2) { top: 9px; }
+  .menu-toggle span:nth-child(3) { top: 18px; }
+
+  /* Saat aktif (menu terbuka) */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+
+  /* ===== MENU OVERLAY (melayang & rata kiri) ===== */
+  .navbar ul {
+    position: fixed;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.95);
+    width: 100%;
+    height: 85vh; /* tidak full layar, elegan */
+    background: rgba(255, 255, 255, 0.98);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+    gap: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 999;
+  }
+
+  .navbar ul.show {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #002368;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+
+  .navbar a:hover {
+    color: #0c4da2;
+  }
+}
