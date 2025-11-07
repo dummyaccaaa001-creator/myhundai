@@ -1,0 +1,82 @@
+/* ===== PROMO PAGE STYLING ===== */
+
+.promo-page {
+  background: #f7f8fc;
+  color: #222;
+  padding-bottom: 60px;
+}
+
+/* Subhead section */
+.promo-subhead {
+  text-align: center;
+  margin: 100px auto 50px;
+  max-width: 850px;
+  padding: 20px;
+}
+.promo-subhead h1 {
+  font-size: 2.2rem;
+  color: #002368;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.promo-subhead p {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Promo content section */
+.promo-content {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.promo-content h2 {
+  color: #002368;
+  margin-top: 30px;
+  font-size: 1.3rem;
+}
+
+.promo-content ul {
+  padding-left: 20px;
+  margin: 10px 0 25px;
+}
+
+.promo-content li {
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+/* Button */
+.promo-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background: #002368;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.promo-btn:hover {
+  background: #0040b0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .promo-subhead {
+    margin: 80px auto 30px;
+    padding: 15px;
+  }
+  .promo-subhead h1 {
+    font-size: 1.6rem;
+  }
+  .promo-content {
+    padding: 25px 20px;
+  }
+}
