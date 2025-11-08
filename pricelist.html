@@ -17,11 +17,13 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/favicon.png">
 
-  <!-- CSS -->
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/navbar.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/pricelist.css">
 
-  <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-     <link rel="stylesheet" href="assets/css/pricelist.css">
+
 
 
 </head>
@@ -31,24 +33,27 @@
 
 <!-- Header -->
 <header>
-  <!-- Tombol menu responsif -->
-  <div class="menu-toggle" id="menu-toggle" aria-label="Buka menu navigasi" role="button" tabindex="0">
-    ☰
-  </div>
+  <a href="index.html" class="logo-link" aria-label="Kembali ke Beranda">
+    <img src="ico-logo.avif" alt="Dealer Hyundai BSD City Logo" class="logo">
+  </a>
 
-  <img src="ico-logo.avif" alt="Dealer Hyundai BSD City Logo" class="logo">
-  <h1 class="site-title">Dealer Resmi Hyundai BSD</h1>
+  <div class="menu-toggle" id="menu-toggle" aria-label="Buka menu navigasi" role="button" tabindex="0">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
   <nav class="navbar" aria-label="Navigasi utama">
     <ul>
-      <li><a href="index.html#home">Beranda</a></li>
-      <li><a href="pricelist.html" class="active">Price List</a></li>
-      <li><a href="index.html#promo">Promo</a></li>
-      <li><a href="index.html#kontak">Kontak</a></li>
+      <!-- Hapus <li> Beranda -->
+      <li><a href="pricelist.html">Price List</a></li>
+      <li><a href="promo.html">Promo</a></li>
+      <li><a href="kontak.html">Kontak & Cabang</a></li>
       <li><a href="karir.html">Karir</a></li>
     </ul>
   </nav>
 </header>
+
 
   <!-- Konten utama -->
 <main role="main" class="pricelist-page">

@@ -17,19 +17,25 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="assets/css/footer.css">
   <link rel="stylesheet" href="assets/css/promo.css">
-</head>
+  <link rel="stylesheet" href="assets/css/navbar.css">
 
-<body>
 <header>
-  <div class="menu-toggle" id="menu-toggle" aria-label="Buka menu navigasi" role="button" tabindex="0">☰</div>
-  <img src="ico-logo.avif" alt="Logo Hyundai BSD City" class="logo">
+  <a href="index.html" class="logo-link" aria-label="Kembali ke Beranda">
+    <img src="ico-logo.avif" alt="Dealer Hyundai BSD City Logo" class="logo">
+  </a>
+
+  <div class="menu-toggle" id="menu-toggle" aria-label="Buka menu navigasi" role="button" tabindex="0">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
   <nav class="navbar" aria-label="Navigasi utama">
     <ul>
-      <li><a href="index.html#home">Beranda</a></li>
+      <!-- Hapus <li> Beranda -->
       <li><a href="pricelist.html">Price List</a></li>
-      <li><a href="promo.html" class="active">Promo</a></li>
-      <li><a href="index.html#kontak">Kontak</a></li>
+      <li><a href="promo.html">Promo</a></li>
+      <li><a href="kontak.html">Kontak & Cabang</a></li>
       <li><a href="karir.html">Karir</a></li>
     </ul>
   </nav>
