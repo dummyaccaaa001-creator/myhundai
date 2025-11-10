@@ -1,4 +1,45 @@
-/* ===== NAVBAR RESPONSIVE (menu tirai + garis antar tulisan, versi rapat & kecil) ===== */
+/* =========================================
+   NAVBAR (Desktop + Responsive)
+   ========================================= */
+
+/* ====== DESKTOP NAVBAR ====== */
+.navbar {
+  flex: 1;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  margin: 0;
+  padding-left: 0;
+}
+
+.navbar a {
+  color: #001f5e;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: #001a66;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+/* Fokus Aksesibilitas */
+.navbar a:focus {
+  outline: 2px solid #003399;
+  outline-offset: 2px;
+}
+
+/* ====== RESPONSIVE (max-width: 768px) ====== */
 @media (max-width: 768px) {
   header {
     justify-content: space-between;
@@ -57,7 +98,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 80vh; /* dikit lebih pendek biar lega di bawah */
+    height: 80vh;
     background: rgba(255, 255, 255, 0.98);
     display: flex;
     flex-direction: column;
@@ -85,7 +126,7 @@
   /* ===== GARIS PEMBATAS ANTAR ITEM NAV ===== */
   .navbar li {
     width: 100%;
-    padding: 0.6rem 0; /* lebih rapat */
+    padding: 0.6rem 0;
     border-bottom: 1px solid rgba(0, 35, 104, 0.08);
   }
 
@@ -93,11 +134,11 @@
     border-bottom: none;
   }
 
-  /* ===== TEKS LINK ===== */
+  /* ===== TEKS LINK (responsive) ===== */
   .navbar a {
     display: block;
     width: 100%;
-    font-size: 1rem; /* lebih kecil dari sebelumnya */
+    font-size: 1rem;
     font-weight: 600;
     color: #002368;
     text-transform: uppercase;
@@ -109,6 +150,8 @@
 
   .navbar a:hover {
     color: #0c4da2;
+    text-decoration: none;
+    transform: none;
   }
 
   /* pointer events aman supaya footer tetap bisa diklik */
@@ -119,4 +162,23 @@
   .navbar ul.show {
     pointer-events: auto;
   }
+
+  /* ===== SEMBUNYIKAN LOGO KANAN DI MOBILE ===== */
+  .logo-kanan {
+    display: none;
+  }
+}
+
+/* ===== LOGO KANAN (DOTY 2025) ===== */
+.logo-kanan {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* dorong ke kanan */
+}
+
+.logo-kanan img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 2rem;
 }
