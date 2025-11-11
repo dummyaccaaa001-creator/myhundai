@@ -1,0 +1,182 @@
+/* ==========================================================
+   KONTAK.CSS - Hyundai BSD City Official
+   ========================================================== */
+
+/* ==========================================================
+   BASE STYLE
+   ========================================================== */
+body.kontak-page {
+  padding-top: 90px; /* ruang aman untuk header fixed */
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f6f7fb;
+  color: #222;
+}
+
+/* Container & Layout */
+.kontak-page .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5vw;
+}
+
+.kontak-page main {
+  background: #fff;
+  padding-bottom: 30px;
+}
+
+/* ==========================================================
+   BREADCRUMB SECTION
+   ========================================================== */
+.kontak-page .bg-light-grey {
+  background-color: #f7f8fa;
+  padding: 10px 0;
+}
+
+/* ==========================================================
+   CABANG DEALER CARD (3S, 1S, BP)
+   ========================================================== */
+.kontak-page .hvr-glow {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 0 0 transparent;
+  transition: all 0.3s ease;
+}
+
+.kontak-page .hvr-glow:hover {
+  box-shadow: 0 4px 12px rgba(0, 35, 104, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Dealer info box */
+.kontak-page .py-2.px-2 {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+/* Dealer title */
+.kontak-page h1.text-black {
+  font-size: 20px !important;
+  font-weight: 600;
+  color: #002368 !important;
+}
+
+/* Dealer section titles (3S, BP, dll) */
+.kontak-page .text-navy {
+  color: #002368;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 1px solid #002b5e;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* ==========================================================
+   CONTACT INFO (MAP & ADDRESS)
+   ========================================================== */
+.kontak-page .bg-navy {
+  background-color: #002368;
+  color: #fff;
+}
+
+.kontak-page .bg-navy p {
+  color: #fff;
+  line-height: 1.5;
+}
+
+.kontak-page .bg-navy iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 325px;
+  border: 0;
+}
+
+.kontak-page .font-medium {
+  font-weight: 600;
+}
+
+.kontak-page .font-regular {
+  font-weight: 400;
+}
+
+/* ==========================================================
+   FOOTER (MENYESUAIKAN GLOBAL STYLE)
+   ========================================================== */
+.kontak-page footer {
+  background-color: #1b1717;
+  color: #fff;
+  padding: 40px 0 10px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ==========================================================
+   RESPONSIVE DESIGN
+   ========================================================== */
+@media (max-width: 992px) {
+  .kontak-page .col-md-4 {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .kontak-page header {
+    height: 70px;
+  }
+
+  .kontak-page .logo {
+    width: 100px;
+  }
+
+  .kontak-page .text-navy {
+    font-size: 0.95rem;
+  }
+
+  .kontak-page h1.text-black {
+    font-size: 18px !important;
+  }
+
+  .kontak-page iframe {
+    height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .kontak-page .col-md-4 {
+    flex: 1 1 100%;
+  }
+
+  .kontak-page h1.text-black {
+    font-size: 16px !important;
+  }
+
+  .kontak-page .text-navy {
+    font-size: 0.9rem;
+  }
+
+  .kontak-page iframe {
+    height: 240px;
+  }
+}
+
+/* ==========================================================
+   STANDARDISASI GLOBAL (KONSISTENSI)
+   ========================================================== */
+.kontak-page h1,
+.kontak-page p,
+.kontak-page li {
+  color: #222;
+}
+
+.kontak-page .hvr-glow:hover {
+  box-shadow: 0 4px 12px rgba(0, 35, 104, 0.15);
+}
+
+/* Tombol WhatsApp tetap di atas konten */
+.whatsapp-float {
+  z-index: 2000;
+}

@@ -1,4 +1,6 @@
-/* RESET DASAR */
+/* =========================================
+   GLOBAL RESET DAN DASAR
+   ========================================= */
 * {
   margin: 0;
   padding: 0;
@@ -17,12 +19,16 @@ body {
   padding-top: 90px; /* ruang aman untuk header fixed */
 }
 
-/* ===== HEADER ===== */
+/* =========================================
+   HEADER & NAVBAR
+   ========================================= */
+
+/* HEADER FIXED (CONTAINER NAVBAR) */
 header {
   background: white;
   color: #002368;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 5vw;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -34,7 +40,7 @@ header {
   height: 80px;
 }
 
-/* LOGO */
+/* LOGO KIRI */
 header .logo {
   width: 120px;
   height: auto;
@@ -42,9 +48,65 @@ header .logo {
   margin-right: 2.5rem;
 }
 
+/* ====== NAVBAR DESKTOP ====== */
+.navbar {
+  flex: 1;
+  position: relative;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.01rem; /* jarak antar menu lebih rapat */
+  margin: 0;
+  padding-left: 0;
+}
+
+.navbar li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Tambahkan garis pemisah antar menu */
+.navbar li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 18px;
+  background-color: rgba(0, 35, 104, 0.25); /* biru navy transparan */
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.navbar a {
+  color: #002368;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: #001a66;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+/* Fokus Aksesibilitas */
+.navbar a:focus {
+  outline: 2px solid #003399;
+  outline-offset: 2px;
+}
 
 
-/* MENU TOGGLE (HP) */
+/* ===== TOMBOL MENU (MOBILE) ===== */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -53,23 +115,61 @@ header .logo {
   margin-left: 1rem;
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== LOGO KANAN (DOTY 2025) ===== */
+.logo-kanan {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logo-kanan img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 2rem;
+}
+
+/* =========================================
+   RESPONSIVE LOGO KANAN (TABLET)
+   ========================================= */
+@media (max-width: 768px) {
+  .logo-kanan {
+    position: absolute;
+    top: 50%;
+    right: 70px;
+    transform: translateY(-50%);
+    margin-left: 0; /* override supaya gak nambah jarak dari flex */
+    display: flex;
+    align-items: center;
+    z-index: 2000;
+  }
+
+  .logo-kanan img {
+    width: 85px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 0; /* hapus jarak tambahan */
+  }
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
 .hero {
   position: relative;
   text-align: center;
   color: white;
-  overflow: hidden; /* penting supaya zoom-nya gak keluar area */
+  overflow: hidden;
 }
 
 .hero img {
   width: 100%;
-  height: 100vh; /* isi tinggi layar di desktop */
+  height: 100vh;
   object-fit: cover;
   filter: brightness(0.7);
   transition: transform 0.5s ease;
 }
 
-/* teks tengah */
 .hero-text {
   position: absolute;
   top: 50%;
@@ -80,17 +180,14 @@ header .logo {
   text-align: center;
 }
 
-/* outline biru tipis */
 .hero-text h2,
 .hero-text p,
 .hero-text a {
   color: #ffffff;
   -webkit-text-stroke: 0.35px #002368;
-  text-shadow: none;
   font-weight: 600;
 }
 
-/* Desktop font size */
 .hero-text h2 {
   font-size: 2.5rem;
   margin-bottom: 0.6em;
@@ -102,7 +199,9 @@ header .logo {
   margin-bottom: 1.2em;
 }
 
-/* ===== CARS SECTION ===== */
+/* =========================================
+   CARS SECTION
+   ========================================= */
 .cars {
   padding: 2rem 1rem;
   text-align: center;
@@ -138,7 +237,9 @@ header .logo {
   border-radius: 8px;
 }
 
-/* ===== WHATSAPP FLOAT ===== */
+/* =========================================
+   WHATSAPP FLOAT
+   ========================================= */
 .whatsapp-float {
   position: fixed;
   width: 60px;
@@ -150,7 +251,7 @@ header .logo {
   border-radius: 50%;
   text-align: center;
   font-size: 30px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -160,15 +261,282 @@ header .logo {
 
 .whatsapp-float:hover {
   transform: scale(1.1);
-  box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 .whatsapp-float img {
   width: 35px;
   height: 35px;
 }
-/* ===== RESPONSIVE ===== */
+
+/* =========================================
+   FOOTER HYUNDAI STYLE
+   ========================================= */
+footer {
+  background-color: #1b1717;
+  color: #fff;
+  font-family: "Poppins", Arial, sans-serif;
+  padding: 40px 0 10px;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-left img {
+  width: 60px;
+  height: auto;
+}
+
+.footer-info {
+  max-width: 500px;
+}
+
+.footer-info h1 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-info p {
+  font-size: 0.8rem;
+  margin: 4px 0 8px;
+  color: #fff;
+}
+
+.footer-info a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  background: none;
+}
+
+.footer-social a:hover {
+  transform: scale(1.1);
+}
+
+.footer-social img {
+  width: 45px;
+  height: auto;
+}
+
+.footer-links {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin: 0 10px;
+  position: relative;
+}
+
+.footer-links a::after {
+  content: "|";
+  margin-left: 10px;
+  color: #aaa;
+}
+
+.footer-links a:last-child::after {
+  content: "";
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+  padding-top: 10px;
+}
+
+/* =========================================
+   RESPONSIVE (MOBILE)
+   ========================================= */
 @media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 5vw;
+    height: 70px;
+  }
+
+  header .logo {
+    width: 100px;
+    order: 1;
+  }
+
+  /* ===== TOMBOL HAMBURGER ===== */
+  .menu-toggle {
+    display: block;
+    width: 28px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+    order: 3;
+    z-index: 1001;
+  }
+
+  .menu-toggle span {
+    background: #002368;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    border-radius: 2px;
+    transition: all 0.35s ease;
+  }
+
+  .menu-toggle span:nth-child(1) { top: 0; }
+  .menu-toggle span:nth-child(2) { top: 9px; }
+  .menu-toggle span:nth-child(3) { top: 18px; }
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+
+  /* ===== NAVBAR MOBILE ===== */
+  .navbar {
+    order: 2;
+  }
+
+  .navbar ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.98);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    gap: 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.4s ease;
+    z-index: 999;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .navbar ul.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navbar li {
+    width: 100%;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(0, 35, 104, 0.08);
+  }
+
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #002368;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.5px;
+  }
+
+  .navbar a:hover {
+    color: #0c4da2;
+    text-decoration: none;
+    transform: none;
+  }
+
+  /* pointer events aman supaya footer tetap bisa diklik */
+  .navbar ul {
+    pointer-events: none;
+  }
+
+  .navbar ul.show {
+    pointer-events: auto;
+  }
+
+  /* ===== LOGO KANAN TETAP TAMPIL DI MOBILE ===== */
+  .logo-kanan {
+    display: flex !important;
+    align-items: center;
+  }
+
+  /* SEMBUNYIKAN LOGO KANAN SAAT MENU DIBUKA */
+  .menu-toggle.active ~ .logo-kanan {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu-toggle ~ .logo-kanan {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* HERO */
   .hero {
     height: 80vh;
   }
@@ -180,7 +548,6 @@ header .logo {
   }
 
   .hero-text {
-    position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -197,5 +564,36 @@ header .logo {
     line-height: 1.4;
   }
 
-  
+  /* FOOTER */
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-left {
+    justify-content: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-links {
+    font-size: 0.8rem;
+    line-height: 2;
+  }
 }
+
+/* =========================================
+   TAMBAHAN RESPONSIVE LOGO
+   ========================================= */
+@media (max-width: 600px) {
+  .logo-kanan { right: 90px; }
+}
+
+@media (max-width: 450px) {
+  .logo-kanan { right: 60px; }
+}
+

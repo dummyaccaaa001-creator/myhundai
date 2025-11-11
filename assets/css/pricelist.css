@@ -2,6 +2,9 @@
    PRICELIST.CSS (Isolated) - Hyundai BSD City Official
    ========================================================== */
 
+/* ==========================================================
+   BASE STYLE
+   ========================================================== */
 .pricelist-page main {
   font-family: "Poppins", Arial, sans-serif;
   background-color: #fff;
@@ -9,7 +12,9 @@
   color: #111;
 }
 
-/* Breadcrumb */
+/* ==========================================================
+   BREADCRUMB
+   ========================================================== */
 .pricelist-page .bg-light-grey {
   background-color: #f7f8fa;
   padding: 10px 0;
@@ -39,7 +44,9 @@
   color: #777;
 }
 
-/* Grid */
+/* ==========================================================
+   GRID SYSTEM
+   ========================================================== */
 .pricelist-page .container {
   width: 90%;
   max-width: 1200px;
@@ -72,15 +79,17 @@
   }
 }
 
-/* Kartu Mobil */
+/* ==========================================================
+   KARTU MOBIL
+   ========================================================== */
 .pricelist-page .hvr-glow {
   background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
   padding: 15px;
+  border: 1px solid #e5e5e5;
   box-shadow: 0 0 0 transparent;
   transition: all 0.3s ease;
-  border: 1px solid #e5e5e5;
 }
 
 .pricelist-page .hvr-glow:hover {
@@ -88,7 +97,9 @@
   transform: translateY(-3px);
 }
 
-/* Gambar mobil */
+/* ==========================================================
+   GAMBAR MOBIL
+   ========================================================== */
 .pricelist-page .pricelist-car-image {
   width: 100%;
   aspect-ratio: 4/3;
@@ -108,7 +119,9 @@
   transform: scale(1.05);
 }
 
-/* Nama mobil */
+/* ==========================================================
+   NAMA MOBIL
+   ========================================================== */
 .pricelist-page .pricelist-car-name h1 {
   font-size: 1.2rem;
   text-align: center;
@@ -118,7 +131,9 @@
   text-transform: uppercase;
 }
 
-/* Baris harga */
+/* ==========================================================
+   BARIS HARGA
+   ========================================================== */
 .pricelist-page .pricelist-car-list {
   display: flex;
   flex-wrap: nowrap;
@@ -135,7 +150,9 @@
   font-weight: 500;
 }
 
-/* Catatan tambahan */
+/* ==========================================================
+   CATATAN TAMBAHAN
+   ========================================================== */
 .pricelist-page .d-flex.pt-2 h1 {
   font-size: 0.8rem;
   font-weight: 600;
@@ -144,7 +161,9 @@
   line-height: 1.4;
 }
 
-/* Footnote */
+/* ==========================================================
+   FOOTNOTE
+   ========================================================== */
 .pricelist-page .bg-cream {
   background-color: #faf7f2;
   padding: 15px 0;
@@ -161,31 +180,75 @@
   margin-bottom: 5px;
 }
 
-/* Utilities */
-.pricelist-page .text-black { color: #111 !important; }
+/* ==========================================================
+   UTILITIES
+   ========================================================== */
+.pricelist-page .text-black   { color: #111 !important; }
 .pricelist-page .text-skyblue { color: #007bff !important; }
-.pricelist-page .font-medium { font-weight: 500; }
-.pricelist-page .fw-700 { font-weight: 700; }
+.pricelist-page .font-medium  { font-weight: 500; }
+.pricelist-page .fw-700       { font-weight: 700; }
 
-/* Animasi */
+/* ==========================================================
+   ANIMASI
+   ========================================================== */
 .pricelist-page [data-wow-delay] {
   animation: fadeInUp 0.8s ease both;
 }
 
 @keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(15px); }
+  0%   { opacity: 0; transform: translateY(15px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Mobile */
+/* ==========================================================
+   RESPONSIVE (MOBILE)
+   ========================================================== */
 @media (max-width: 480px) {
   .pricelist-page .pricelist-car-name h1 {
     font-size: 1rem;
   }
+
   .pricelist-page .pricelist-car-list h1 {
     font-size: 0.75rem;
   }
+
   .pricelist-page .pricelist-footnote ul {
     font-size: 0.8rem;
   }
+}
+
+/* ==========================================================
+   STANDARDISASI HYUNDAI BSD (Konsistensi Global)
+   ========================================================== */
+
+/* Pastikan padding top mengikuti header fixed */
+body.pricelist-page {
+  padding-top: 90px;
+  background-color: #f6f7fb;
+  color: #222;
+}
+
+/* Samakan container padding dengan halaman utama */
+.pricelist-page .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5vw;
+}
+
+/* Perbaiki tone warna biru hover sesuai Hyundai */
+.pricelist-page .hvr-glow:hover {
+  box-shadow: 0 4px 12px rgba(0, 35, 104, 0.15);
+}
+
+/* Sedikit kurangi jarak bawah supaya footer rapi */
+.pricelist-page main {
+  padding-bottom: 30px;
+}
+
+/* Sesuaikan font warna dasar agar sama dengan style global */
+.pricelist-page h1,
+.pricelist-page p,
+.pricelist-page li {
+  color: #222;
 }
