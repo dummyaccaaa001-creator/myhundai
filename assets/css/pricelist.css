@@ -5,6 +5,10 @@
 /* ==========================================================
    BASE STYLE
    ========================================================== */
+body.pricelist-page {
+  font-size: 16px; /* kunci rem agar stabil */
+}
+
 .pricelist-page main {
   font-family: "Poppins", Arial, sans-serif;
   background-color: #fff;
