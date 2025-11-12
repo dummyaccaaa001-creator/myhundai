@@ -3,6 +3,11 @@
    ========================================================== */
 
 /* ==========================================================
+   FONT IMPORT
+   ========================================================== */
+
+
+/* ==========================================================
    BASE STYLE
    ========================================================== */
 body.pricelist-page {
@@ -10,11 +15,12 @@ body.pricelist-page {
 }
 
 .pricelist-page main {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Hyundai Sans", "Poppins", Arial, sans-serif;
   background-color: #fff;
   padding-bottom: 50px;
   color: #111;
 }
+
 
 /* ==========================================================
    BREADCRUMB
@@ -257,7 +263,7 @@ body.pricelist-page {
   color: #222;
 }
 .pricelist-page main > h1 {
-  font-size: 0.55rem;          /* ukuran sedang, tidak terlalu besar */
+  font-size: 0.9rem;          /* ukuran sedang, tidak terlalu besar */
   font-weight: 700;           /* tegas tapi elegan */
   color: #0a0a0a;             /* warna teks netral */
   text-align: center;         /* posisi tengah */
