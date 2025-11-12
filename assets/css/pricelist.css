@@ -257,7 +257,7 @@ body.pricelist-page {
   color: #222;
 }
 .pricelist-page main > h1 {
-  font-size: 1rem;          /* ukuran sedang, tidak terlalu besar */
+  font-size: 0.55rem;          /* ukuran sedang, tidak terlalu besar */
   font-weight: 700;           /* tegas tapi elegan */
   color: #0a0a0a;             /* warna teks netral */
   text-align: center;         /* posisi tengah */
