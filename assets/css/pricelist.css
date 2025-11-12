@@ -257,11 +257,12 @@ body.pricelist-page {
 }
 
 /* Sesuaikan font warna dasar agar sama dengan style global */
-.pricelist-page h2,
-.pricelist-page p,
-.pricelist-page li {
+.pricelist-page main h2,
+.pricelist-page main p,
+.pricelist-page main li {
   color: #222;
 }
+
 .pricelist-page main > h1 {
   font-size: 0.9rem;          /* ukuran sedang, tidak terlalu besar */
   font-weight: 700;           /* tegas tapi elegan */
