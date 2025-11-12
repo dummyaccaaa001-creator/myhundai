@@ -253,7 +253,7 @@ body.pricelist-page {
   color: #222;
 }
 .pricelist-page main > h1 {
-  font-size: 1.6rem;          /* ukuran sedang, tidak terlalu besar */
+  font-size: 1rem;          /* ukuran sedang, tidak terlalu besar */
   font-weight: 700;           /* tegas tapi elegan */
   color: #0a0a0a;             /* warna teks netral */
   text-align: center;         /* posisi tengah */
@@ -272,16 +272,4 @@ body.pricelist-page {
   background-color: #007bff;  /* biru khas Hyundai */
   margin: 10px auto 0;
   border-radius: 2px;
-}
-/* Responsif (mobile) */
-@media (max-width: 480px) {
-  .pricelist-page main > h1 {
-    font-size: 1.3rem;
-    margin: 25px 0 15px;
-  }
-
-  .pricelist-page main > h1::after {
-    width: 60px;
-    height: 2.5px;
-  }
 }
