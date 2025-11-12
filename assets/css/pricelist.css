@@ -122,7 +122,7 @@
 /* ==========================================================
    NAMA MOBIL
    ========================================================== */
-.pricelist-page .pricelist-car-name h1 {
+.pricelist-page .pricelist-car-name h2 {
   font-size: 1.2rem;
   text-align: center;
   color: #007bff;
@@ -143,7 +143,7 @@
   border-bottom: 1px dashed #ccc;
 }
 
-.pricelist-page .pricelist-car-list h1 {
+.pricelist-page .pricelist-car-list h2 {
   font-size: 0.8rem;
   margin: 0;
   color: #111;
@@ -153,7 +153,7 @@
 /* ==========================================================
    CATATAN TAMBAHAN
    ========================================================== */
-.pricelist-page .d-flex.pt-2 h1 {
+.pricelist-page .d-flex.pt-2 h2 {
   font-size: 0.8rem;
   font-weight: 600;
   color: #222;
@@ -204,11 +204,11 @@
    RESPONSIVE (MOBILE)
    ========================================================== */
 @media (max-width: 480px) {
-  .pricelist-page .pricelist-car-name h1 {
+  .pricelist-page .pricelist-car-name h2 {
     font-size: 1rem;
   }
 
-  .pricelist-page .pricelist-car-list h1 {
+  .pricelist-page .pricelist-car-list h2 {
     font-size: 0.75rem;
   }
 
@@ -247,8 +247,41 @@ body.pricelist-page {
 }
 
 /* Sesuaikan font warna dasar agar sama dengan style global */
-.pricelist-page h1,
+.pricelist-page h2,
 .pricelist-page p,
 .pricelist-page li {
   color: #222;
+}
+.pricelist-page main > h1 {
+  font-size: 1.6rem;          /* ukuran sedang, tidak terlalu besar */
+  font-weight: 700;           /* tegas tapi elegan */
+  color: #0a0a0a;             /* warna teks netral */
+  text-align: center;         /* posisi tengah */
+  margin: 35px 0 25px;        /* jarak atas dan bawah */
+  letter-spacing: 0.3px;      /* sedikit spasi biar elegan */
+  line-height: 1.4;
+  position: relative;
+}
+
+/* Tambahan aksen garis biru elegan di bawah H1 */
+.pricelist-page main > h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #007bff;  /* biru khas Hyundai */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+/* Responsif (mobile) */
+@media (max-width: 480px) {
+  .pricelist-page main > h1 {
+    font-size: 1.3rem;
+    margin: 25px 0 15px;
+  }
+
+  .pricelist-page main > h1::after {
+    width: 60px;
+    height: 2.5px;
+  }
 }

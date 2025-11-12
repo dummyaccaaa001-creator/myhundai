@@ -1,0 +1,86 @@
+/* ==========================================================
+   PROGRAM.CSS – HYUNDAI BSD CITY
+   ========================================================== */
+
+body.program-page {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f6f7fb;
+  padding-top: 90px; /* mengikuti header fixed */
+  color: #222;
+}
+
+/* Judul Utama */
+.program-content > h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin: 35px 0 25px;
+  position: relative;
+}
+
+.program-content > h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Daftar Program */
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 0 5vw 60px;
+}
+
+.program-item {
+  flex: 1 1 300px;
+  max-width: 360px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,35,104,0.15);
+}
+
+.program-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.program-item h2 {
+  font-size: 1.1rem;
+  color: #007bff;
+  margin: 15px 0 10px;
+  font-weight: 600;
+}
+
+.program-item p {
+  font-size: 0.9rem;
+  color: #444;
+  padding: 0 15px 20px;
+  line-height: 1.5;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .program-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .program-item {
+    max-width: 90%;
+  }
+}
