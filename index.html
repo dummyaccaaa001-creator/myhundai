@@ -17,6 +17,12 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preload" as="image"
+  href="assets/img/showroom-bsd.webp"
+  imagesrcset="assets/img/showroom-bsd.webp"
+  imagesizes="100vw"
+  fetchpriority="high">
+
 
 
   <!-- Open Graph -->
@@ -129,11 +135,17 @@
 
 <main id="home">
   <!-- HERO SECTION (gambar saja) -->
-  <section class="hero">
-    <img src="assets/img/showroom-bsd.jpg" 
-         alt="Showroom Hyundai BSD City"
-         width="100%" height="auto" loading="lazy">
-  </section>
+<section class="hero">
+  <img
+    src="assets/img/showroom-bsd.webp"
+    alt="Showroom Hyundai BSD City"
+    width="2000"
+    height="1333"
+    decoding="async"
+    fetchpriority="high">
+</section>
+
+
 
   <!-- HERO TEXT pindah ke bawah gambar -->
   <div class="hero-text">
