@@ -1,86 +1,112 @@
 /* ==========================================================
-   PROGRAM.CSS – HYUNDAI BSD CITY
+   PROGRAM.CSS – HYUNDAI BSD CITY (FINAL CLEAN)
    ========================================================== */
 
+/* BODY */
 body.program-page {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Hyundai Sans", Arial, sans-serif;
   background-color: #f6f7fb;
-  padding-top: 90px; /* mengikuti header fixed */
+  padding-top: 90px;
   color: #222;
 }
 
-/* Judul Utama */
+/* ==========================================================
+   JUDUL UTAMA
+   ========================================================== */
 .program-content > h1 {
   text-align: center;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #0a0a0a;
-  margin: 35px 0 25px;
-  position: relative;
+  font-size: 1.4rem;
+  font-weight: 500; /* Hyundai Sans only has weight 500 */
+  line-height: 1.4;
+  color: #111;
+  margin: 35px 0 30px;
 }
 
 .program-content > h1::after {
   content: "";
   display: block;
-  width: 80px;
+  width: 90px;
   height: 3px;
   background-color: #007bff;
-  margin: 10px auto 0;
+  margin: 12px auto 0;
   border-radius: 2px;
 }
 
-/* Daftar Program */
+/* ==========================================================
+   CARD WRAPPER
+   ========================================================== */
 .program-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 32px;
   justify-content: center;
-  padding: 0 5vw 60px;
+  padding: 0 5vw 80px;
 }
 
+/* ==========================================================
+   CARD ITEM
+   ========================================================== */
 .program-item {
-  flex: 1 1 300px;
-  max-width: 360px;
+  flex: 1 1 260px;
+  max-width: 340px;
   background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   text-align: center;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  padding-bottom: 22px;
 }
 
 .program-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,35,104,0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,35,104,0.18);
 }
 
+/* ==========================================================
+   GAMBAR PROGRAM — NATURAL (NO CROP)
+   ========================================================== */
 .program-item img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;   /* NO CROP */
+  display: block;
+  border-bottom: 1px solid #eee;
 }
 
+/* ==========================================================
+   JUDUL CARD
+   ========================================================== */
 .program-item h2 {
-  font-size: 1.1rem;
-  color: #007bff;
-  margin: 15px 0 10px;
-  font-weight: 600;
+  font-family: "Hyundai Sans", Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #003899;
+  margin: 20px 12px 10px;
+  line-height: 1.45;
 }
 
+/* ==========================================================
+   DESKRIPSI CARD
+   ========================================================== */
 .program-item p {
-  font-size: 0.9rem;
-  color: #444;
-  padding: 0 15px 20px;
-  line-height: 1.5;
+  font-family: "Hyundai Sans", Arial, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 500; /* Hyundai Sans weight */
+  color: #555;
+  line-height: 1.9;
+  max-width: 85%;
+  margin: 0 auto;
 }
 
-/* Responsif */
-@media (max-width: 768px) {
-  .program-list {
-    flex-direction: column;
-    align-items: center;
-  }
-  .program-item {
-    max-width: 90%;
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+/* MOBILE PADDING TEKS */
+@media (max-width: 600px) {
+  .program-item p {
+    max-width: 100%;
+    padding: 0 20px;
   }
 }
