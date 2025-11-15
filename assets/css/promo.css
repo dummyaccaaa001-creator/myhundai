@@ -1,60 +1,127 @@
 /* ===== PROMO PAGE STYLING ===== */
 
+/* ===== FONT IMPORT ===== */
+@font-face {
+    font-family: "HyundaiSans";
+    src: url("../fonts/HyundaiSansTextOffice-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.promo-page,
+.promo-page * {
+    font-family: "HyundaiSans", "Poppins", sans-serif;
+}
+
 .promo-page {
   background: #f7f8fc;
   color: #222;
   padding-bottom: 60px;
 }
 
-/* Subhead section */
+/* ===== SUBHEAD ===== */
 .promo-subhead {
   text-align: center;
-  margin: 100px auto 50px;
+  margin: 70px auto 25px;   /* diperpendek dari 100px auto 50px */
   max-width: 850px;
-  padding: 20px;
+  padding: 10px 20px;
 }
+
 .promo-subhead h1 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   color: #002368;
-  margin-bottom: 10px;
-  letter-spacing: 0.5px;
+  margin-bottom: 8px;       /* lebih rapat */
+  letter-spacing: 0.3px;
 }
+
 .promo-subhead p {
   color: #444;
   font-size: 1.05rem;
-  line-height: 1.6;
+  line-height: 1.55;
+  margin-bottom: 10px;      /* diperpendek */
 }
 
-/* Promo content section */
+/* ===== PROMO GALLERY ===== */
+
+.promo-gallery {
+  padding: 10px 20px 25px;  /* diperpendek padding bawah */
+  max-width: 1100px;
+  margin: 0 auto 30px;      /* jarak lebih rapat */
+  text-align: center;
+}
+
+.promo-gallery h2 {
+  font-size: 1.55rem;
+  color: #002368;
+  font-weight: 700;
+  margin: 0 0 4px 0;        /* rapat atas-bawah */
+}
+
+.promo-gallery .promo-desc {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* Grid Gambar */
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+/* Card */
+.promo-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  transition: 0.25s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.promo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ===== PROMO CONTENT ===== */
 .promo-content {
   max-width: 850px;
   margin: 0 auto;
   background: #fff;
   border-radius: 12px;
-  padding: 40px 30px;
+  padding: 35px 28px;       /* sedikit lebih rapat */
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 .promo-content h2 {
   color: #002368;
-  margin-top: 30px;
-  font-size: 1.3rem;
+  margin-top: 25px;         /* diperpendek */
+  font-size: 1.25rem;
 }
 
 .promo-content ul {
   padding-left: 20px;
-  margin: 10px 0 25px;
+  margin: 8px 0 22px;
 }
 
 .promo-content li {
-  line-height: 1.7;
+  line-height: 1.6;
   margin-bottom: 6px;
 }
 
-/* Button */
+/* ===== BUTTON ===== */
 .promo-btn {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 25px;
   background: #002368;
   color: #fff;
   padding: 12px 20px;
@@ -63,20 +130,37 @@
   font-weight: 600;
   transition: 0.3s ease;
 }
+
 .promo-btn:hover {
   background: #0040b0;
 }
 
-/* Responsive */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+
   .promo-subhead {
-    margin: 80px auto 30px;
-    padding: 15px;
+    margin: 60px auto 20px;
+    padding: 10px 15px;
   }
+
   .promo-subhead h1 {
     font-size: 1.6rem;
   }
+
+  .promo-gallery {
+    padding: 5px 15px 20px;
+    margin-bottom: 20px;
+  }
+
+  .promo-gallery h2 {
+    font-size: 1.3rem;
+  }
+
   .promo-content {
     padding: 25px 20px;
+  }
+
+  .promo-grid {
+    gap: 14px;
   }
 }
