@@ -1,39 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Homepage -->
   <url>
     <loc>https://hyundaibsd.city/</loc>
-    <lastmod>2025-11-05T12:00:00+07:00</lastmod>
+    <lastmod>2025-11-16T12:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- Price List -->
   <url>
     <loc>https://hyundaibsd.city/pricelist.html</loc>
-    <lastmod>2025-11-05T12:00:00+07:00</lastmod>
+    <lastmod>2025-11-16T12:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- Career -->
   <url>
     <loc>https://hyundaibsd.city/karir.html</loc>
-    <lastmod>2025-11-05T12:00:00+07:00</lastmod>
+    <lastmod>2025-11-16T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- Promo -->
   <url>
     <loc>https://hyundaibsd.city/promo.html</loc>
-    <lastmod>2025-11-04T12:00:00+07:00</lastmod>
+    <lastmod>2025-11-16T12:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- Kontak / Branch -->
   <url>
     <loc>https://hyundaibsd.city/kontak.html</loc>
-    <lastmod>2025-11-04T12:00:00+07:00</lastmod>
+    <lastmod>2025-11-16T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <!-- Program -->
+  <url>
+    <loc>https://hyundaibsd.city/program.html</loc>
+    <lastmod>2025-11-16T12:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- News Page -->
+  <url>
+    <loc>https://hyundaibsd.city/news.html</loc>
+    <lastmod>2025-11-16T12:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Detail News: GJAW 2025 -->
+  <url>
+    <loc>https://hyundaibsd.city/news/gjaw2025.html</loc>
+    <lastmod>2025-11-16T12:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
