@@ -38,7 +38,7 @@ font-family: "HyundaiSans", sans-serif;
 
 /* HEADER FIXED (CONTAINER NAVBAR) */
 header {
-  background: white;
+  background: #E8DFD4; /* WARNA BARU */
   color: #002368;
   display: flex;
   justify-content: space-between;
@@ -52,6 +52,7 @@ header {
   z-index: 1000;
   height: 80px;
 }
+
 
 /* LOGO KIRI */
 header .logo {
@@ -386,6 +387,7 @@ footer .container {
    ========================================= */
 @media (max-width: 768px) {
   header {
+    background: #E8DFD4; /* TAMBAHKAN INI */
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem 5vw;
