@@ -1,0 +1,101 @@
+/* ============================
+   HOME INTRO – PREMIUM STYLE
+   ============================ */
+
+.home-page .home-intro {
+  max-width: 950px;
+  margin: 65px auto;
+  padding: 40px 42px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  border-radius: 18px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 35, 104, 0.08);
+  position: relative;
+}
+
+/* Decorative top line */
+.home-page .home-intro::before {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #002368;
+  border-radius: 10px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Title */
+.home-page .home-intro h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #001a4d;
+  margin-bottom: 25px;
+  line-height: 1.35;
+}
+
+/* Premium text */
+.home-page .home-intro p {
+  font-size: 1.12rem;
+  color: #333;
+  line-height: 1.75;
+  margin-bottom: 18px;
+  position: relative;
+  padding-left: 32px;
+}
+
+/* Premium bullet icon */
+.home-page .home-intro p::before {
+  content: "▹";
+  color: #002368;
+  font-size: 1.3rem;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+/* Link style */
+.home-page .home-intro a {
+  color: #002368;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: 0.2s ease;
+}
+
+.home-page .home-intro a:hover {
+  color: #00123d;
+  text-decoration: none;
+}
+
+/* Divider line */
+.home-page .home-intro hr {
+  margin: 30px 0;
+  border: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-page .home-intro {
+    padding: 28px 24px;
+    border-radius: 14px;
+  }
+
+  .home-page .home-intro h2 {
+    font-size: 1.55rem;
+  }
+
+  .home-page .home-intro p {
+    font-size: 0.98rem;
+    padding-left: 24px;
+  }
+
+  .home-page .home-intro p::before {
+    font-size: 1.1rem;
+  }
+}

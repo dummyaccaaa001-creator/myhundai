@@ -110,3 +110,41 @@ font-family: "HyundaiSans", sans-serif;
     padding: 0 20px;
   }
 }
+/* ===============================
+   PROGRAM PAGE NOTES BOX
+   =============================== */
+
+.program-notes {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.program-notes ul {
+  margin-left: 20px;
+}
+
+.program-notes li {
+  margin-bottom: 12px;
+}
+
+.program-notes a {
+  color: #002368;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .program-notes {
+    padding: 15px 18px;
+    margin: 30px auto 45px;
+    font-size: 0.9rem;
+  }
+}

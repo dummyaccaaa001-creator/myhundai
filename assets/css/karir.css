@@ -180,3 +180,59 @@ footer .container {
     text-align: center;
   }
 }
+
+  .site-title {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+  }
+
+  /* Hero image */
+  .karir-hero {
+    margin-top: 0;
+  }
+  @media (max-width: 768px) {
+    .karir-hero {
+      margin-top: 60px; /* agar tidak ketimpa navbar mobile */
+    }
+  }
+
+  /* Konten lowongan */
+  .karir-content {
+    background: #fff;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .karir-content h1, .karir-content h2 {
+    text-align: center;
+    color: #002368;
+  }
+  .karir-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  .karir-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+  .karir-content ul, .karir-content ol {
+    padding-left: 20px;
+  }
+  .karir-content li {
+    line-height: 1.6;
+    margin-bottom: 6px;
+  }
+  .wa-link {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .wa-link:hover { background: #1da851; }

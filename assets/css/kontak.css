@@ -180,3 +180,14 @@ font-family: "HyundaiSans", sans-serif;
 .whatsapp-float {
   z-index: 2000;
 }
+.contact-home-link {
+  color: #030169;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: 0.25s ease;
+}
+
+.contact-home-link:hover {
+  color: #dce6ff;
+  text-decoration: none;
+}

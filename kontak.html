@@ -81,19 +81,25 @@
 
 <body>
 
-<!-- HEADER -->
+<!-- Header -->
 <header>
-  <a href="index.html" class="logo-link">
-    <img src="ico-logo.avif" alt="Dealer Hyundai BSD City" class="logo">
+  <!-- Logo Hyundai kiri -->
+  <a href="index.html" class="logo-link" aria-label="Kembali ke Beranda">
+    <img src="ico-logo.avif" alt="Dealer Hyundai BSD City Logo" class="logo">
   </a>
 
-  <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
-    <span></span><span></span><span></span>
+  <!-- Tombol menu untuk mobile -->
+  <div class="menu-toggle" id="menu-toggle" aria-label="Buka menu navigasi" role="button" tabindex="0">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 
-  <nav class="navbar">
+  <!-- Navigasi utama -->
+  <nav class="navbar" aria-label="Navigasi utama">
     <ul>
         <li><a href="pricelist.html">Price List</a></li>
+        <li><a href="vehicle.html">Vehicle</a></li>
         <li><a href="promo.html">Promo</a></li>
         <li><a href="program.html">Program</a></li>
         <li><a href="kontak.html">Branch</a></li>
@@ -102,8 +108,9 @@
     </ul>
   </nav>
 
-  <a href="#" class="logo-kanan">
-    <img src="assets/logos/doty-2025-logo.webp" alt="Doty 2025">
+  <!-- Logo Doty 2025 di kanan -->
+  <a href="#" class="logo-kanan" aria-label="Doty 2025">
+    <img src="assets/logos/doty-2025-logo.webp" alt="Doty 2025 Logo">
   </a>
 </header>
 
@@ -283,7 +290,10 @@
   <div class="container">
     <h2 class="contact-title text-white">Contact</h2>
 
-    <p class="text-white">PT Hyundai Mobil Indonesia</p>
+    <p class="text-white">
+  <a href="index.html" class="contact-home-link">Hyundai BSD City Official</a>
+</p>
+
     <p class="text-white">Jl BSD Boulevard Utara Kav. Commercial De Park Lot II No.18A</p>
     <p class="text-white">BSD City, Tangerang, Banten 15331</p>
     <p class="text-white">Telp: (021) 5319 8000 ; (021) 5089 8820–5</p>
