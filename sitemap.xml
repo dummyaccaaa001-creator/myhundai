@@ -49,6 +49,14 @@
     <priority>0.75</priority>
   </url>
 
+  <!-- Vehicle -->
+  <url>
+    <loc>https://hyundaibsd.city/vehicle.html</loc>
+    <lastmod>2025-11-16T12:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- News Page -->
   <url>
     <loc>https://hyundaibsd.city/news.html</loc>
