@@ -1,0 +1,314 @@
+/* ==========================================================
+   GJAW 2025 – EVENT INFO
+   ========================================================== */
+.promo-event-info {
+  background: #ffffff;
+  padding: 25px;
+  margin: 35px 0;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.promo-event-info h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.event-info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.event-info-item {
+  background: #f7f8fa;
+  padding: 18px;
+  border-radius: 12px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+.event-info-item h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.event-info-item p,
+.event-info-item ul {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.event-info-item ul li {
+  margin: 4px 0;
+  list-style: none;
+}
+
+
+/* ==========================================================
+   GJAW 2025 – LUCKY DIP
+   ========================================================== */
+.promo-doorprize {
+  margin: 40px 0;
+  padding: 25px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.promo-doorprize h2 {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.dp-desc {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.doorprize-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+}
+
+.doorprize-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+
+.doorprize-item img {
+  width: 120px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.doorprize-item p {
+  font-size: 0.95rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+.syarat-box {
+  margin-top: 30px;
+  background: #f7f8fa;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.syarat-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.syarat-box ul {
+  margin-left: 18px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+/* ==========================================================
+   GJAW 2025 – TEST DRIVE PROGRAM
+   ========================================================== */
+.promo-testdrive {
+  margin: 40px 0;
+  padding: 25px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.promo-testdrive h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.td-desc {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.td-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.td-step {
+  width: 150px;
+  text-align: center;
+}
+
+.td-step img {
+  width: 85px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.td-step p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+.td-souvenir h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.souvenir-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.souvenir-item {
+  width: 140px;
+  text-align: center;
+}
+
+.souvenir-item img {
+  width: 110px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 8px;
+}
+
+.souvenir-item p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 600px) {
+  .event-info-item,
+  .souvenir-item,
+  .td-step {
+    width: 100%;
+  }
+
+  .doorprize-item {
+    width: 45%;
+  }
+
+  .doorprize-item img {
+    width: 100px;
+  }
+
+  .souvenir-item img {
+    width: 90px;
+  }
+}
+/* Test Drive — Emoji Version */
+.td-emoji {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.promo-testdrive .td-step {
+  width: 150px;
+  text-align: center;
+}
+
+.promo-testdrive .td-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.souvenir-item .td-emoji {
+  font-size: 42px;
+  margin-bottom: 6px;
+}
+/* ==========================================================
+   GJAW 2025 – SYARAT & KETENTUAN
+   ========================================================== */
+.promo-terms {
+  margin: 40px 0;
+  padding: 25px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.promo-terms h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.terms-block {
+  margin-bottom: 25px;
+  background: #f9fafc;
+  padding: 18px 20px;
+  border-radius: 12px;
+  border-left: 4px solid #007bff;
+}
+
+.terms-block h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.terms-block ul,
+.terms-block ol {
+  margin-left: 20px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.terms-block ul li,
+.terms-block ol li {
+  margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .terms-block {
+    padding: 15px;
+  }
+}
