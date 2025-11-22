@@ -4,31 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Hyundai Stargazer Essential – WebP Test</title>
+  <title>Hyundai Stargazer Essential</title>
 
   <!-- CSS eksternal -->
   <link rel="stylesheet" href="../../assets/css/vehicle/stargazer.css">
-
+  <link rel="stylesheet" href="/assets/css/vehicle/dropdown.css">
 </head>
 <body>
-  <div class="container">
 
-    <h1>Hyundai Stargazer Essential (WebP Test)</h1>
+  <!-- HEADER -->
+  <header class="vehicle-header">
+    <h1 class="vehicle-title">Hyundai Stargazer Essential</h1>
 
-    <!-- DROPDOWN PAKAI IFRAME (AMAN LCP) -->
     <iframe 
       src="../dropdown.html"
       loading="lazy"
-      style="width:100%; border:0; margin-bottom:20px; height:70px; overflow:hidden;">
+      class="vehicle-dropdown">
     </iframe>
+  </header>
 
-    <!-- GAMBAR WEBP -->
+  <!-- KONTEN UTAMA -->
+  <div class="container">
+
     <img 
       src="../../assets/img/vehicle/stargazer/stargazer_essential.webp"
       alt="Hyundai Stargazer Essential"
+      class="vehicle-image"
       width="1200"
       height="1800">
 
   </div>
+
 </body>
 </html>

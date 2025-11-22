@@ -1,31 +1,23 @@
-<div class="variant-dropdown">
-  <select onchange="location = this.value;">
-    <option value="">Pilih Model & Tipe ⮟</option>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../assets/css/vehicle/dropdown.css">
+</head>
+<body>
 
-    <!-- STARGAZER -->
-    <optgroup label="Stargazer">
-      <option value="/vehicle/stargazer/stargazer_active.html">Active</option>
-      <option value="/vehicle/stargazer/stargazer_essential.html">Essential</option>
-      <option value="/vehicle/stargazer/stargazer_essential_ivt.html">Essential IVT</option>
-      <option value="/vehicle/stargazer/stargazer_essential_tech.html">Essential Tech</option>
-      <option value="/vehicle/stargazer/stargazer_prime.html">Prime</option>
-    </optgroup>
+  <div class="variant-dropdown">
+    <select onchange="if(this.value) window.top.location.href = 'stargazer/' + this.value;">
+      <option value="">Pilih Tipe Stargazer</option>
 
-    <!-- CRETA -->
-    <optgroup label="Creta">
-      <option value="/vehicle/creta/creta_active.html">Active</option>
-      <option value="/vehicle/creta/creta_trend.html">Trend</option>
-      <option value="/vehicle/creta/creta_style.html">Style</option>
-      <option value="/vehicle/creta/creta_prime.html">Prime</option>
-    </optgroup>
+      <option value="stargazer_active.html">Stargazer Active</option>
+      <option value="stargazer_essential.html">Stargazer Essential</option>
+      <option value="stargazer_essential_ivt.html">Stargazer Essential IVT</option>
+      <option value="stargazer_essential_tech.html">Stargazer Essential Tech</option>
+      <option value="stargazer_prime.html">Stargazer Prime</option>
 
-    <!-- PALISADE -->
-    <optgroup label="Palisade">
-      <option value="/vehicle/palisade/palisade_prime.html">Prime</option>
-      <option value="/vehicle/palisade/palisade_signature.html">Signature</option>
-      <option value="/vehicle/palisade/palisade_calligraphy.html">Calligraphy</option>
-    </optgroup>
+    </select>
+  </div>
 
-    <!-- Tambah model lain bebas -->
-  </select>
-</div>
+</body>
+</html>
