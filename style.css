@@ -444,18 +444,9 @@ footer .container {
     order: 2;
   }
 
-  /* SEMBUNYIKAN NAVBAR DESKTOP */
-.navbar ul {
-  display: none;    /* ❗ WAJIB */
-}
-
-/* Tampilkan ulang jika hamburger diklik */
-.navbar ul.show {
-  display: flex !important;
-}
-
 
   .navbar ul {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -478,6 +469,7 @@ footer .container {
   }
 
   .navbar ul.show {
+    display: flex !important;
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
