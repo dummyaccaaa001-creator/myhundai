@@ -6,34 +6,145 @@
 
   <title>Hyundai Stargazer Essential</title>
 
-  <!-- CSS eksternal -->
-  <link rel="stylesheet" href="../../assets/css/vehicle/stargazer.css">
-  <link rel="stylesheet" href="/assets/css/vehicle/dropdown.css">
+<!-- Font Preload -->
+<link rel="preload" href="../../assets/fonts/HyundaiSansTextOffice-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- CSS kendaraan (FINAL) -->
+<link rel="stylesheet" href="../../assets/css/vehicle/stargazer.css">
+
+<!-- CSS global -->
+<link rel="stylesheet" href="../../style.css">
+
+<!-- JS navbar -->
+<script src="../../assets/js/navbar.js" defer></script>
+
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header class="vehicle-header">
-    <h1 class="vehicle-title">Hyundai Stargazer Essential</h1>
+<!-- ===========================
+        HEADER
+=========================== -->
+<header>
+  <a href="../../index.html" class="logo-link" aria-label="Kembali ke Beranda">
+    <img src="../../ico-logo.png" class="logo" alt="Dealer Hyundai BSD City Logo">
+  </a>
 
-    <iframe 
-      src="../dropdown.html"
-      loading="lazy"
-      class="vehicle-dropdown">
-    </iframe>
-  </header>
+  <div class="menu-toggle" id="menu-toggle" aria-label="Buka menu navigasi" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
 
-  <!-- KONTEN UTAMA -->
+  <nav class="navbar" aria-label="Navigasi utama">
+    <ul>
+      <li><a href="../../pricelist.html">Price List</a></li>
+      <li><a href="../../vehicles.html">Vehicle</a></li>
+      <li><a href="../../promo.html">Promo</a></li>
+      <li><a href="../../program.html">Program</a></li>
+      <li><a href="../../kontak.html">Branch</a></li>
+      <li><a href="../../karir.html">Career</a></li>
+      <li><a href="../../news.html">News</a></li>
+    </ul>
+  </nav>
+
+  <a href="#" class="logo-kanan" aria-label="Doty 2025">
+    <img src="../../assets/logos/doty-2025-logo.webp" alt="Doty 2025 Logo">
+  </a>
+</header>
+
+
+<!-- ===========================
+        DROPDOWN VARIAN
+=========================== -->
+<iframe 
+  src="../dropdown.html"
+  class="vehicle-dropdown"
+  loading="lazy">
+</iframe>
+
+
+<!-- ===========================
+        MAIN CONTENT
+=========================== -->
+<main class="vehicle-main">
   <div class="container">
+
+    <h1 class="vehicle-title">Spesifikasi Hyundai Stargazer Essential MT</h1>
 
     <img 
       src="../../assets/img/vehicle/stargazer/stargazer_essential.webp"
       alt="Hyundai Stargazer Essential"
-      class="vehicle-image"
-      width="1200"
-      height="1800">
+      class="vehicle-image">
 
   </div>
+</main>
+<div class="vehicle-internal-links">
+  <ul>
+    <li><a href="../../index.html">🏠 Kembali ke Beranda</a></li>
 
+    <li><a href="../../vehicles.html">Lihat Semua Model Hyundai</a></li>
+
+    <li><a href="../../stargazer_active.html">Stargazer Active</a></li>
+    <li><a href="../../stargazer_essential.html">Stargazer Essential</a></li>
+    <li><a href="../../stargazer_essential_ivt.html">Stargazer Essential IVT</a></li>
+    <li><a href="../../stargazer_essential_tech.html">Stargazer Essential Tech</a></li>
+    <li><a href="../../stargazer_prime.html">Stargazer Prime</a></li>
+  </ul>
+</div>
+
+  <!-- =======================
+       FOOTER
+  ======================== -->
+<footer>
+  <div class="container">
+
+    <div class="footer-top">
+      <div class="footer-left">
+        <img src="https://hyundaimobil.co.id/assets/img/logo-footer.png" alt="Hyundai Logo">
+
+        <div class="footer-info">
+          <h1>PT Hyundai Mobil Indonesia</h1>
+          <a href="https://hyundaimobil.co.id/news/details/waspada-penipuan-transaksi-aman-hanya-ke-rekening-pt-hyundai-mobil-indonesia" target="_blank" rel="noopener">
+            Segala Bentuk Transaksi Hanya Melalui Nomer Rekening Resmi PT HYUNDAI MOBIL INDONESIA (Klik Disini)
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1Bp1UaAfpp/" target="_blank" rel="noopener">
+          <img src="../../assets/sosmedlogo/facebook.png" alt="Facebook">
+        </a>
+
+        <a href="https://youtube.com/@hyundaibsd.city-official?si=VzD1mjOFYyFBPZiR" target="_blank" rel="noopener">
+          <img src="../../assets/sosmedlogo/youtube.png" alt="YouTube">
+        </a>
+
+        <a href="https://x.com/hyundai_bsdcity" target="_blank" rel="noopener">
+          <img src="../../assets/sosmedlogo/x.png" alt="X (Twitter)">
+        </a>
+
+        <a href="https://www.instagram.com/hyundainbsd.city" target="_blank" rel="noopener">
+          <img src="../../assets/sosmedlogo/instagram.png" alt="Instagram">
+        </a>
+
+        <a href="https://www.tiktok.com/@hyundainbsd2" target="_blank" rel="noopener">
+          <img src="../../assets/sosmedlogo/tiktok.png" alt="TikTok">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <a href="../../vehicles.html">Vehicle line-up</a>
+      <a href="https://hyundaimobil.co.id/download" target="_blank" rel="noopener">Downloads</a>
+      <a href="https://hyundaimobil.co.id/legal" target="_blank" rel="noopener">Legal</a>
+      <a href="../../kontak.html">Contact us</a>
+      <a href="https://maps.app.goo.gl/PyrEnz6gi7MpJe1i7" target="_blank" rel="noopener">Lokasi Dealer</a>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Hyundai Mobil Indonesia. All Rights Reserved.
+    </div>
+
+  </div>
+</footer>
 </body>
 </html>

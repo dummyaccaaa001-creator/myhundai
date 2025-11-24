@@ -1,98 +1,80 @@
 /* ==========================================================
-   PRICELIST.CSS (Isolated) - Hyundai BSD City Official
+   VEHICLE PAGE CSS — Hyundai BSD City
+   Clean • Konsisten • Tanpa Bentrok
    ========================================================== */
 
-/* ==========================================================
-   FONT IMPORT
-   ========================================================== */
-
-
-/* ==========================================================
-   BASE STYLE
-   ========================================================== */
-body.pricelist-page {
-  font-size: 16px; /* kunci rem agar stabil */
-}
-
-.pricelist-page main {
-font-family: "HyundaiSans", sans-serif;
-  background-color: #fff;
-  padding-bottom: 50px;
-  color: #111;
-}
-
-
-/* ==========================================================
-   BREADCRUMB
-   ========================================================== */
-.pricelist-page .bg-light-grey {
-  background-color: #f7f8fa;
-  padding: 10px 0;
-}
-
-.pricelist-page .breadcrumb {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  font-size: 0.9rem;
-}
-
-.pricelist-page .breadcrumb a {
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.pricelist-page .breadcrumb a:hover {
-  text-decoration: underline;
-}
-
-.pricelist-page .breadcrumb-item + .breadcrumb-item::before {
-  content: "›";
-  margin: 0 8px;
-  color: #777;
+/* Halaman memakai class ini di <body> */
+body.vehicle-page {
+  padding-top: 90px; /* ruang untuk header fixed */
+  background: #f6f7fb;
+  color: #222;
+  font-family: "HyundaiSans", sans-serif;
+  margin: 0;
 }
 
 /* ==========================================================
-   GRID SYSTEM
+   MAIN TITLE
    ========================================================== */
-.pricelist-page .container {
-  width: 90%;
+
+.vehicle-page h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin: 35px 0 25px;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  position: relative;
+}
+
+.vehicle-page h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ==========================================================
+   GRID SYSTEM — Sama dengan Pricelist
+   ========================================================== */
+
+.vehicle-page .container {
+  width: 100%;
   max-width: 1200px;
+  padding: 0 5vw;
   margin: 0 auto;
 }
 
-.pricelist-page .row {
+.vehicle-page .row {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.pricelist-page .col-12 {
-  width: 100%;
-}
-
-.pricelist-page .col-md-4 {
+.vehicle-page .col-md-4 {
   flex: 1 1 calc(33.333% - 20px);
 }
 
 @media (max-width: 992px) {
-  .pricelist-page .col-md-4 {
+  .vehicle-page .col-md-4 {
     flex: 1 1 calc(50% - 20px);
   }
 }
 
 @media (max-width: 600px) {
-  .pricelist-page .col-md-4 {
+  .vehicle-page .col-md-4 {
     flex: 1 1 100%;
   }
 }
 
 /* ==========================================================
-   KARTU MOBIL
+   CARD (hvr-glow)
    ========================================================== */
-.pricelist-page .hvr-glow {
+
+.vehicle-page .hvr-glow {
   background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
@@ -102,37 +84,39 @@ font-family: "HyundaiSans", sans-serif;
   transition: all 0.3s ease;
 }
 
-.pricelist-page .hvr-glow:hover {
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+.vehicle-page .hvr-glow:hover {
+  box-shadow: 0 4px 12px rgba(0, 35, 104, 0.15);
   transform: translateY(-3px);
 }
 
 /* ==========================================================
    GAMBAR MOBIL
    ========================================================== */
-.pricelist-page .pricelist-car-image {
+
+.vehicle-page .pricelist-car-image {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 6px;
   margin-bottom: 10px;
 }
 
-.pricelist-page .pricelist-car-image img {
+.vehicle-page .pricelist-car-image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
-.pricelist-page .pricelist-car-image img:hover {
+.vehicle-page .pricelist-car-image img:hover {
   transform: scale(1.05);
 }
 
 /* ==========================================================
    NAMA MOBIL
    ========================================================== */
-.pricelist-page .pricelist-car-name h2 {
+
+.vehicle-page .pricelist-car-name h2 {
   font-size: 1.2rem;
   text-align: center;
   color: #007bff;
@@ -141,152 +125,15 @@ font-family: "HyundaiSans", sans-serif;
   text-transform: uppercase;
 }
 
-/* ==========================================================
-   BARIS HARGA
-   ========================================================== */
-.pricelist-page .pricelist-car-list {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4px 0;
-  border-bottom: 1px dashed #ccc;
-}
-
-.pricelist-page .pricelist-car-list h2 {
-  font-size: 0.8rem;
-  margin: 0;
-  color: #111;
-  font-weight: 500;
-}
-
-/* ==========================================================
-   CATATAN TAMBAHAN
-   ========================================================== */
-.pricelist-page .d-flex.pt-2 h2 {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #222;
-  margin-top: 8px;
-  line-height: 1.4;
-}
-
-/* ==========================================================
-   FOOTNOTE
-   ========================================================== */
-.pricelist-page .bg-cream {
-  background-color: #faf7f2;
-  padding: 15px 0;
-}
-
-.pricelist-page .pricelist-footnote ul {
-  margin-left: 1.2rem;
-  color: #555;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.pricelist-page .pricelist-footnote li {
-  margin-bottom: 5px;
-}
-
-/* ==========================================================
-   UTILITIES
-   ========================================================== */
-.pricelist-page .text-black   { color: #111 !important; }
-.pricelist-page .text-skyblue { color: #007bff !important; }
-.pricelist-page .font-medium  { font-weight: 500; }
-.pricelist-page .fw-700       { font-weight: 700; }
-
-/* ==========================================================
-   ANIMASI
-   ========================================================== */
-.pricelist-page [data-wow-delay] {
-  animation: fadeInUp 0.8s ease both;
-}
-
-@keyframes fadeInUp {
-  0%   { opacity: 0; transform: translateY(15px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-/* ==========================================================
-   RESPONSIVE (MOBILE)
-   ========================================================== */
 @media (max-width: 480px) {
-  .pricelist-page .pricelist-car-name h2 {
+  .vehicle-page .pricelist-car-name h2 {
     font-size: 1rem;
   }
-
-  .pricelist-page .pricelist-car-list h2 {
-    font-size: 0.75rem;
-  }
-
-  .pricelist-page .pricelist-footnote ul {
-    font-size: 0.8rem;
-  }
 }
 
 /* ==========================================================
-   STANDARDISASI HYUNDAI BSD (Konsistensi Global)
+   NOTES BOX
    ========================================================== */
-
-/* Pastikan padding top mengikuti header fixed */
-body.pricelist-page {
-  padding-top: 90px;
-  background-color: #f6f7fb;
-  color: #222;
-}
-
-/* Samakan container padding dengan halaman utama */
-.pricelist-page .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 5vw;
-}
-
-/* Perbaiki tone warna biru hover sesuai Hyundai */
-.pricelist-page .hvr-glow:hover {
-  box-shadow: 0 4px 12px rgba(0, 35, 104, 0.15);
-}
-
-/* Sedikit kurangi jarak bawah supaya footer rapi */
-.pricelist-page main {
-  padding-bottom: 30px;
-}
-
-/* Sesuaikan font warna dasar agar sama dengan style global */
-.pricelist-page main h2,
-.pricelist-page main p,
-.pricelist-page main li {
-  color: #222;
-}
-
-.pricelist-page main > h1 {
-  font-size: 0.9rem;          /* ukuran sedang, tidak terlalu besar */
-  font-weight: 700;           /* tegas tapi elegan */
-  color: #0a0a0a;             /* warna teks netral */
-  text-align: center;         /* posisi tengah */
-  margin: 35px 0 25px;        /* jarak atas dan bawah */
-  letter-spacing: 0.3px;      /* sedikit spasi biar elegan */
-  line-height: 1.4;
-  position: relative;
-}
-
-/* Tambahan aksen garis biru elegan di bawah H1 */
-.pricelist-page main > h1::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: #007bff;  /* biru khas Hyundai */
-  margin: 10px auto 0;
-  border-radius: 2px;
-}
-/* ===============================
-   VEHICLE PAGE NOTES BOX
-   =============================== */
 
 .vehicle-notes {
   max-width: 900px;
@@ -294,10 +141,10 @@ body.pricelist-page {
   background: #ffffff;
   padding: 20px 25px;
   border-radius: 10px;
-  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
   font-size: 0.95rem;
-  color: #333;
   line-height: 1.6;
+  color: #333;
 }
 
 .vehicle-notes ul {
@@ -314,7 +161,6 @@ body.pricelist-page {
   text-decoration: underline;
 }
 
-/* Tambahan responsive */
 @media (max-width: 600px) {
   .vehicle-notes {
     margin: 20px auto 40px;

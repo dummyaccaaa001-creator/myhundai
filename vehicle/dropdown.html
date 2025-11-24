@@ -2,8 +2,44 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../assets/css/vehicle/dropdown.css">
+
+  <!-- CSS INLINE AMAN -->
+<style>
+  /* iframe dropdown tidak mengubah gaya halaman utama */
+  html, body {
+    margin: 0;
+    padding: 8px 16px;
+    background: transparent;
+    font-family: "Hyundai Sans", Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  .variant-dropdown select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    background: #ffffff;
+    cursor: pointer;
+    appearance: none;
+
+    /* ikon panah */
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+
+    transition: all 0.15s ease;
+  }
+
+  .variant-dropdown select:hover {
+    border-color: #002368;
+  }
+</style>
+
 </head>
+
 <body>
 
   <div class="variant-dropdown">
@@ -15,7 +51,6 @@
       <option value="stargazer_essential_ivt.html">Stargazer Essential IVT</option>
       <option value="stargazer_essential_tech.html">Stargazer Essential Tech</option>
       <option value="stargazer_prime.html">Stargazer Prime</option>
-
     </select>
   </div>
 
