@@ -1,3 +1,5 @@
+/* Premium Homepage Styling for Hyundai BSD City */
+
 /* ============================
    HOME INTRO – PREMIUM STYLE
    ============================ */
@@ -13,7 +15,6 @@
   position: relative;
 }
 
-/* Decorative top line */
 .home-page .home-intro::before {
   content: "";
   width: 80px;
@@ -26,7 +27,6 @@
   transform: translateX(-50%);
 }
 
-/* Title */
 .home-page .home-intro h2 {
   text-align: center;
   font-size: 2.1rem;
@@ -36,7 +36,6 @@
   line-height: 1.35;
 }
 
-/* Premium text */
 .home-page .home-intro p {
   font-size: 1.12rem;
   color: #333;
@@ -46,7 +45,6 @@
   padding-left: 32px;
 }
 
-/* Premium bullet icon */
 .home-page .home-intro p::before {
   content: "▹";
   color: #002368;
@@ -57,7 +55,6 @@
   top: 3px;
 }
 
-/* Link style */
 .home-page .home-intro a {
   color: #002368;
   font-weight: 700;
@@ -70,7 +67,6 @@
   text-decoration: none;
 }
 
-/* Divider line */
 .home-page .home-intro hr {
   margin: 30px 0;
   border: 0;
@@ -99,7 +95,11 @@
     font-size: 1.1rem;
   }
 }
-/* GJAW Promo Alert – Homepage */
+
+/* ============================
+   GJAW Promo Alert
+   ============================ */
+
 .promo-alert {
   background: #f0f6ff;
   padding: 18px 20px;
