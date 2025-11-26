@@ -1,25 +1,154 @@
-/* Premium Homepage Styling for Hyundai BSD City */
+/* ============================================
+   GLOBAL TYPOGRAPHY & THEME
+============================================ */
 
-/* ============================
-   HOME INTRO – PREMIUM STYLE
-   ============================ */
+:root {
+  --hyundai-primary: #002368;    /* Navy Hyundai */
+  --hyundai-primary-dark: #001a4d;
+  --hyundai-text-dark: #111;
+  --hyundai-text-body: #333;
+  --hyundai-muted: #555;
+  --hyundai-bg-light: #f7f9fc;
+  --hyundai-section-gap: 60px;
+  --radius-large: 18px;
+}
 
-.home-page .home-intro {
-  max-width: 950px;
-  margin: 65px auto;
-  padding: 40px 42px;
-  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
-  border-radius: 18px;
-  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
+body {
+  font-family: "Hyundai Sans", Arial;
+  color: var(--hyundai-text-body);
+  line-height: 1.6;
+}
+
+/* Heading konsisten */
+h1, h2, h3 {
+  color: var(--hyundai-text-dark);
+  letter-spacing: 0.3px;
+  line-height: 1.35;
+}
+
+h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+section {
+  margin-top: var(--hyundai-section-gap);
+}
+
+
+/* ============================================
+   HERO SECTION (16:9 full width)
+============================================ */
+
+.hero {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+/* Hero text */
+.hero-text {
+  width: 90%;
+  max-width: 900px;
+  margin: 38px auto 48px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  color: var(--hyundai-text-body);
+}
+
+.hero-address p {
+  font-size: 0.97rem;
+  color: var(--hyundai-muted);
+  margin: 4px 0;
+}
+
+
+/* ============================================
+   PROMO ALERT (GJAW BOX)
+============================================ */
+
+.promo-alert {
+  background: #f0f6ff;
+  padding: 22px 25px;
+  border-left: 6px solid #0d6efd;
+  border-radius: 14px;
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+.promo-alert h3 {
+  color: #0056d6;
+  margin-bottom: 8px;
+}
+
+.promo-alert p {
+  font-size: 0.97rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.promo-alert-link {
+  background: #007bff;
+  padding: 9px 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  transition: 0.3s ease;
+}
+
+.promo-alert-link:hover {
+  background: #005fcc;
+}
+
+
+/* ============================================
+   HOME INTRO CARD
+============================================ */
+
+.home-intro {
+  background: var(--hyundai-bg-light);
+  max-width: 1050px;
+  margin: 55px auto 80px;
+  padding: 45px 42px;
   border: 1px solid rgba(0, 35, 104, 0.08);
+  border-radius: var(--radius-large);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
   position: relative;
 }
 
-.home-page .home-intro::before {
+/* Decorative top line */
+.home-intro::before {
   content: "";
-  width: 80px;
+  width: 90px;
   height: 4px;
-  background: #002368;
+  background: var(--hyundai-primary);
   border-radius: 10px;
   position: absolute;
   top: -12px;
@@ -27,113 +156,65 @@
   transform: translateX(-50%);
 }
 
-.home-page .home-intro h2 {
-  text-align: center;
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: #001a4d;
-  margin-bottom: 25px;
-  line-height: 1.35;
-}
-
-.home-page .home-intro p {
-  font-size: 1.12rem;
-  color: #333;
-  line-height: 1.75;
+.home-intro p {
+  font-size: 1.05rem;
   margin-bottom: 18px;
+  padding-left: 30px;
   position: relative;
-  padding-left: 32px;
 }
 
-.home-page .home-intro p::before {
+.home-intro p::before {
   content: "▹";
-  color: #002368;
-  font-size: 1.3rem;
-  font-weight: 700;
   position: absolute;
   left: 0;
   top: 3px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--hyundai-primary);
 }
 
-.home-page .home-intro a {
-  color: #002368;
-  font-weight: 700;
+.home-intro a {
+  color: var(--hyundai-primary);
+  font-weight: 600;
   text-decoration: underline;
   transition: 0.2s ease;
 }
 
-.home-page .home-intro a:hover {
-  color: #00123d;
+.home-intro a:hover {
+  color: var(--hyundai-primary-dark);
   text-decoration: none;
 }
 
-.home-page .home-intro hr {
-  margin: 30px 0;
+.home-intro hr {
   border: 0;
   height: 1px;
-  background: rgba(0, 0, 0, 0.08);
-  width: 100%;
+  background: rgba(0,0,0,0.1);
+  margin: 32px 0;
 }
 
-/* Responsive */
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
 @media (max-width: 768px) {
-  .home-page .home-intro {
-    padding: 28px 24px;
-    border-radius: 14px;
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.45rem; }
+
+  .hero-text { margin: 24px auto; }
+
+  .home-intro {
+    padding: 30px 24px;
+    margin: 50px auto;
   }
 
-  .home-page .home-intro h2 {
-    font-size: 1.55rem;
+  .home-intro p {
+    font-size: 0.95rem;
+    padding-left: 22px;
   }
 
-  .home-page .home-intro p {
-    font-size: 0.98rem;
-    padding-left: 24px;
+  .promo-alert {
+    padding: 18px 20px;
   }
-
-  .home-page .home-intro p::before {
-    font-size: 1.1rem;
-  }
-}
-
-/* ============================
-   GJAW Promo Alert
-   ============================ */
-
-.promo-alert {
-  background: #f0f6ff;
-  padding: 18px 20px;
-  border-left: 5px solid #007bff;
-  border-radius: 10px;
-  margin: 25px 0;
-}
-
-.promo-alert h3 {
-  margin: 0 0 6px;
-  color: #0056d6;
-  font-size: 1.15rem;
-  font-weight: 600;
-}
-
-.promo-alert p {
-  margin: 0 0 12px;
-  color: #333;
-  line-height: 1.55;
-  font-size: 0.95rem;
-}
-
-.promo-alert-link {
-  display: inline-block;
-  background: #007bff;
-  padding: 8px 14px;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.92rem;
-  transition: background .2s ease;
-}
-
-.promo-alert-link:hover {
-  background: #005fcc;
 }
