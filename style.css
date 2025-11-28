@@ -28,7 +28,7 @@ font-family: "Hyundai Sans", Arial;
   background: #f6f7fb;
   color: #222;
   line-height: 1.6;
-  padding-top: 90px; /* ruang aman untuk header fixed */
+  padding-top: 0px; /* ruang aman untuk header fixed */
 }
 
 
@@ -334,7 +334,7 @@ footer .container {
     background: #E8DFD4; /* TAMBAHKAN INI */
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 5vw;
+    padding: 0.8rem 16px;
     height: 70px;
   }
 
@@ -499,20 +499,12 @@ footer .container {
   .logo-kanan { right: 60px; }
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-section, div, ul, li {
-  max-width: 100%;
-}
 
 a, p, li {
   word-break: break-word;
+}
+body.home-page {
+  padding-top: 80px; /* sama seperti tinggi header */
 }

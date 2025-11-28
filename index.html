@@ -14,7 +14,6 @@
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="/favicon.png">
 <link rel="preload" as="image"
@@ -111,6 +110,7 @@
 
 
 
+
 <body class="home-page">
 
 
@@ -152,7 +152,44 @@
 
 <main id="home">
 
-  <!-- HERO SECTION (gambar saja) -->
+<div class="top-slider-wrapper">
+  <div class="top-slider">
+
+    <div class="slide active">
+      <img src="assets/img/index/hili_sg.webp" alt="Promo Hyundai Stargazer BSD City" loading="eager" fetchpriority="high">
+    </div>
+
+    <div class="slide">
+      <img src="assets/img/index/hili_stria.webp" alt="Promo Hyundai Staria" loading="lazy">
+    </div>
+
+    <div class="slide">
+      <img src="assets/img/index/hi_tcs.webp" alt="Promo Hyundai Tucson" loading="lazy">
+    </div>
+
+    <div class="slide">
+      <img src="assets/img/index/hi_crtz.webp" alt="Promo Hyundai Creta" loading="lazy">
+    </div>
+
+    <div class="slide">
+      <img src="assets/img/index/hi_io5.webp" alt="Promo Hyundai Ioniq 5" loading="lazy">
+    </div>
+
+    <div class="slide">
+      <img src="assets/img/index/hi_io6.webp" alt="Promo Hyundai Ioniq 6" loading="lazy">
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<section class="headline-box">
+  <h1>Promo Hyundai BSD City November</h1>
+  <p>Dapatkan penawaran terbaik hanya di dealer resmi Hyundai BSD</p>
+</section>
+
   <section class="hero">
     <img
       src="assets/img/1764118741635.webp"
@@ -228,7 +265,6 @@
 </section>
 
 
-</main>
 
 
 
@@ -281,6 +317,26 @@
    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
 </a>
 
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".top-slider .slide");
+  const total = slides.length;
+
+  if (total === 0) return; // antisipasi kalau kosong
+
+  function nextSlide() {
+    slides[currentSlide].classList.remove("active");
+
+    currentSlide = (currentSlide + 1) % total;
+
+    slides[currentSlide].classList.add("active");
+  }
+
+  setInterval(nextSlide, 4000);
+});
+</script>
 
 
 

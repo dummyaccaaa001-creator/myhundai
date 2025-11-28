@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <link rel="preload" href="/assets/fonts/HyundaiSansTextOffice-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <meta charset="UTF-8">
 
-  <!-- CSS INLINE AMAN -->
 <style>
-  /* iframe dropdown tidak mengubah gaya halaman utama */
+  @font-face {
+  font-family: "Hyundai Sans";
+  src: url("/assets/fonts/HyundaiSansTextOffice-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
   html, body {
     margin: 0;
     padding: 8px 16px;
@@ -25,34 +32,68 @@
     cursor: pointer;
     appearance: none;
 
-    /* ikon panah */
     background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
     background-repeat: no-repeat;
     background-position: right 14px center;
-
-    transition: all 0.15s ease;
-  }
-
-  .variant-dropdown select:hover {
-    border-color: #002368;
   }
 </style>
-
 </head>
 
 <body>
 
   <div class="variant-dropdown">
-    <select onchange="if(this.value) window.top.location.href = 'stargazer/' + this.value;">
-      <option value="">Pilih Tipe Stargazer</option>
-
-      <option value="stargazer_active.html">Stargazer Active</option>
-      <option value="stargazer_essential.html">Stargazer Essential</option>
-      <option value="stargazer_essential_ivt.html">Stargazer Essential IVT</option>
-      <option value="stargazer_essential_tech.html">Stargazer Essential Tech</option>
-      <option value="stargazer_prime.html">Stargazer Prime</option>
+    <select id="variantSelect">
+      <option value="">Memuat varian...</option>
     </select>
   </div>
+
+<script>
+// Ambil nama model dari iframe
+const modelName = window.frameElement.dataset.model;
+
+// Data varian semua model
+const variants = {
+  stargazer: [
+    ["stargazer_active.html", "Stargazer Active"],
+    ["stargazer_essential.html", "Stargazer Essential"],
+    ["stargazer_essential_ivt.html", "Stargazer Essential IVT"],
+    ["stargazer_essential_tech.html", "Stargazer Essential Tech"],
+    ["stargazer_prime.html", "Stargazer Prime"]
+  ],
+
+  creta: [
+    ["creta_active.html", "Creta Active"],
+    ["creta_trendIVT.html", "Creta Trend IVT"],
+    ["creta_trendMT.html", "Creta Trend MT"],
+    ["creta_style.html", "Creta Style"],
+    ["creta_prime.html", "Creta Prime"],
+    ["creta_n_line.html", "Creta N Line"],
+    ["creta_n_line_turbo.html", "Creta N Line Turbo"]
+  ]
+};
+
+// Isi dropdown sesuai model
+const select = document.getElementById("variantSelect");
+select.innerHTML = `<option value="">Pilih Tipe ${modelName.charAt(0).toUpperCase() + modelName.slice(1)}</option>`;
+
+if (variants[modelName]) {
+  variants[modelName].forEach(([file, label]) => {
+    select.innerHTML += `<option value="${file}">${label}</option>`;
+  });
+}
+
+// AUTO SELECT: pilih varian sesuai halaman yang sedang dibuka
+const currentPage = window.top.location.pathname.split("/").pop();
+select.value = currentPage;
+
+// Redirect saat dipilih
+select.onchange = function () {
+  if (this.value) {
+    window.top.location.href = `/vehicle/${modelName}/${this.value}`;
+  }
+};
+
+</script>
 
 </body>
 </html>
