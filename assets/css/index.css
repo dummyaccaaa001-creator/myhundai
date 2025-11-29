@@ -230,5 +230,24 @@ section {
     height: 220px;
   }
 }
+/* hanya halaman index */
+.home-page html,
+.home-page body {
+  overflow-x: hidden;
+}
+
+/* gambar hanya di slider */
+.home-page .top-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* prevent text overflow tanpa mengganggu layout lain */
+.home-page p,
+.home-page li,
+.home-page a {
+  word-break: break-word;
+}
 
 
