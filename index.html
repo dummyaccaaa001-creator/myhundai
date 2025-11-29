@@ -294,7 +294,7 @@
     </div>
 
 <div class="footer-links">
-  <a href="vehicle.html">Vehicle line-up</a>
+  <a href="vehicles.html">Vehicle line-up</a>
   <a href="https://hyundaimobil.co.id/download">Downloads</a>
   <a href="https://hyundaimobil.co.id/legal">Legal</a>
   <a href="kontak.html">Contact us</a>
@@ -324,7 +324,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".top-slider .slide");
   const total = slides.length;
 
-  if (total === 0) return; // antisipasi kalau kosong
 
   function nextSlide() {
     slides[currentSlide].classList.remove("active");

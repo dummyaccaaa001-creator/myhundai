@@ -499,20 +499,4 @@ footer .container {
   .logo-kanan { right: 60px; }
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-section, div, ul, li {
-  max-width: 100%;
-}
-
-a, p, li {
-  word-break: break-word;
-}
