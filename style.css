@@ -210,6 +210,9 @@ footer {
   color: #fff;
   font-family: "Poppins", Arial, sans-serif;
   padding: 40px 0 10px;
+    width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 footer .container {

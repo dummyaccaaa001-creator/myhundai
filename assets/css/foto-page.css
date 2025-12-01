@@ -1,0 +1,96 @@
+/* CSS khusus halaman foto showroom */
+
+body.foto-body {
+  background: #f7f9fc;
+  line-height: 1.6;
+  padding-top: 80px; /* ruang untuk header fixed */
+}
+
+main.foto-page {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+h1.foto-title {
+  color: #002368;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+/* === SECTION HIGHLIGHT KHUSUS === */
+
+/* Hilangkan grid pada highlight */
+.section-highlight .gallery {
+  display: block;
+}
+
+/* Atur ukuran gambar highlight */
+.section-highlight .gallery img {
+  width: 260px;        /* kecil */
+  max-width: 100%;
+  border-radius: 12px;
+  display: block;
+  margin-left: 0;      /* mepet kiri */
+}
+
+
+
+/* === SECTION EXTERIOR KHUSUS === */
+
+/* Grid otomatis mengikuti ukuran gambar */
+.section-exterior .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  gap: 15px;
+  justify-content: start;   /* mepet kiri */
+  align-items: start;
+}
+
+/* Atur ukuran semua gambar exterior */
+.section-exterior .gallery img {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+
+
+
+
+
+.section h2 {
+  color: #002368;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.gallery a img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.gallery a:hover img {
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
