@@ -249,5 +249,52 @@ section {
 .home-page a {
   word-break: break-word;
 }
+.home-foto-preview {
+  background: #ffffff;
+  max-width: 1050px;
+  margin: 55px auto 60px;
+  padding: 42px 38px;
+  border: 1px solid rgba(0, 35, 104, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+  text-align: center;
+  position: relative;
+}
+
+/* Decorative line sama seperti home-intro */
+.home-foto-preview::before {
+  content: "";
+  width: 90px;
+  height: 4px;
+  background: var(--hyundai-primary);
+  border-radius: 10px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home-foto-preview img {
+  width: 260px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  margin-bottom: 18px;
+}
+
+.home-foto-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: var(--hyundai-primary);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.home-foto-btn:hover {
+  background: var(--hyundai-primary-dark);
+}
 
 
