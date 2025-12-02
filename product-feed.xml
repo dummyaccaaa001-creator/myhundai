@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:g="http://base.google.com/ns/1.0">
+<channel>
+  <title>Hyundai BSD City Product Feed</title>
+  <link>https://hyundaibsd.city</link>
+  <description>Feed produk Hyundai BSD City untuk Google Merchant Center</description>
+
+
+  <!-- ================= CRETA ================= -->
+
+  <item>
+    <g:id>creta-active</g:id>
+    <g:title>Hyundai Creta Active</g:title>
+    <g:description>Hyundai Creta Active — varian entry-level dengan mesin 1.5L Smartstream dan fitur keselamatan lengkap.</g:description>
+    <g:link>https://hyundaibsd.city/vehicle/creta/creta_active.html</g:link>
+    <g:image_link>https://hyundaibsd.city/assets/img/vehicle/creta/CRETA_active.webp</g:image_link>
+    <g:availability>in stock</g:availability>
+    <g:condition>new</g:condition>
+    <g:brand>Hyundai</g:brand>
+    <g:price>0 IDR</g:price>
+  </item>
+
+  <item>
+    <g:id>creta-n-line</g:id>
+    <g:title>Hyundai Creta N Line</g:title>
+    <g:description>Hyundai Creta N Line — desain sporty khas N Line dengan fitur premium dan mesin 1.5L Smartstream.</g:description>
+    <g:link>https://hyundaibsd.city/vehicle/creta/creta_n_line.html</g:link>
+    <g:image_link>https://hyundaibsd.city/assets/img/vehicle/creta/CRETA_n.webp</g:image_link>
+    <g:availability>in stock</g:availability>
+    <g:condition>new</g:condition>
+    <g:brand>Hyundai</g:brand>
+    <g:price>0 IDR</g:price>
+  </item>
+
+  <item>
+    <g:id>creta-prime</g:id>
+    <g:title>Hyundai Creta Prime</g:title>
+    <g:description>Hyundai Creta Prime — varian tertinggi Creta dengan fitur keselamatan dan kenyamanan paling lengkap.</g:description>
+    <g:link>https://hyundaibsd.city/vehicle/creta/creta_prime.html</g:link>
+    <g:image_link>https://hyundaibsd.city/assets/img/vehicle/creta/CRETA_prime.webp</g:image_link>
+    <g:availability>in stock</g:availability>
+    <g:condition>new</g:condition>
+    <g:brand>Hyundai</g:brand>
+    <g:price>0 IDR</g:price>
+  </item>
+
+  <item>
+    <g:id>creta-style</g:id>
+    <g:title>Hyundai Creta Style</g:title>
+    <g:description>Hyundai Creta Style — varian stylish dengan fitur interior & eksterior lebih lengkap.</g:description>
+    <g:link>https://hyundaibsd.city/vehicle/creta/creta_style.html</g:link>
+    <g:image_link>https://hyundaibsd.city/assets/img/vehicle/creta/CRETA_style.webp</g:image_link>
+    <g:availability>in stock</g:availability>
+    <g:condition>new</g:condition>
+    <g:brand>Hyundai</g:brand>
+    <g:price>0 IDR</g:price>
+  </item>
+
+  <item>
+    <g:id>creta-trend-ivt</g:id>
+    <g:title>Hyundai Creta Trend IVT</g:title>
+    <g:description>Hyundai Creta Trend IVT — varian menengah dengan transmisi IVT yang halus dan efisien.</g:description>
+    <g:link>https://hyundaibsd.city/vehicle/creta/creta_trendIVT.html</g:link>
+    <g:image_link>https://hyundaibsd.city/assets/img/vehicle/creta/CRETA_trend_ivt.webp</g:image_link>
+    <g:availability>in stock</g:availability>
+    <g:condition>new</g:condition>
+    <g:brand>Hyundai</g:brand>
+    <g:price>0 IDR</g:price>
+  </item>
+
+  <item>
+    <g:id>creta-trend-mt</g:id>
+    <g:title>Hyundai Creta Trend MT</g:title>
+    <g:description>Hyundai Creta Trend MT — pilihan ekonomis dengan transmisi manual 6-percepatan.</g:description>
+    <g:link>https://hyundaibsd.city/vehicle/creta/creta_trendMT.html</g:link>
+    <g:image_link>https://hyundaibsd.city/assets/img/vehicle/creta/CRETA_trend.webp</g:image_link>
+    <g:availability>in stock</g:availability>
+    <g:condition>new</g:condition>
+    <g:brand>Hyundai</g:brand>
+    <g:price>0 IDR</g:price>
+  </item>
+
+
+  <!-- ================= STARGAZER ================= -->
+
+  <item>
+    <g:id>sg-active</g:id>
+    <g:title>Hyundai Stargazer Active</g:title>
+    <g:description>Hyundai Stargazer Active — MPV modern dengan desain futuristik dan kenyamanan keluarga.</g:description>
+    <g:link>https://hyundaibsd.city/vehicle/stargazer/stargazer_active.html</g:link>
+    <g:image_link>https://hyundaibsd.city/assets/img/vehicle/stargazer/stargazer-active.webp</g:image_link>
+    <g:availability>in stock</g:availability>
+    <g:condition>new</g:condition>
+    <g:brand>Hyundai</g:brand>
+    <g:price>0 IDR</g:price>
+  </item>
+
+  <item>
+    <g:id>sg-essential-ivt</g:id>
+    <g:title>Hyundai Stargazer Essential IVT</g:title>
+    <g:description>Hyundai Stargazer Essential IVT — kombinasi fitur lengkap dan kenyamanan berkendara.</g:description>
+    <g:link>https://hyundaibsd.city/vehicle/stargazer/stargazer_essential_ivt.html</g:link>
+    <g:image_link>https://hyundaibsd.city/assets/img/vehicle/stargazer/stargazer_ess-ivt.webp</g:image_link>
+    <g:availability>in stock</g:availability>
+    <g:condition>new</g:condition>
+    <g:brand>Hyundai</g:brand>
+    <g:price>0 IDR</g:price>
+  </item>
+
+  <item>
+    <g:id>sg-essential-tech</g:id>
+    <g:title>Hyundai Stargazer Essential Tech</g:title>
+    <g:description>Hyundai Stargazer Essential Tech — fitur modern & teknologi lengkap untuk keluarga.</g:description>
+    <g:link>https://hyundaibsd.city/vehicle/stargazer/stargazer_essential_tech.html</g:link>
+    <g:image_link>https://hyundaibsd.city/assets/img/vehicle/stargazer/stargazer_esstech.webp</g:image_link>
+    <g:availability>in stock</g:availability>
+    <g:condition>new</g:condition>
+    <g:brand>Hyundai</g:brand>
+    <g:price>0 IDR</g:price>
+  </item>
+
+  <item>
+    <g:id>sg-essential</g:id>
+    <g:title>Hyundai Stargazer Essential</g:title>
+    <g:description>Hyundai Stargazer Essential — pilihan tepat untuk keluarga modern.</g:description>
+    <g:link>https://hyundaibsd.city/vehicle/stargazer/stargazer_essential.html</g:link>
+    <g:image_link>https://hyundaibsd.city/assets/img/vehicle/stargazer/stargazer_essential.webp</g:image_link>
+    <g:availability>in stock</g:availability>
+    <g:condition>new</g:condition>
+    <g:brand>Hyundai</g:brand>
+    <g:price>0 IDR</g:price>
+  </item>
+
+  <item>
+    <g:id>sg-prime</g:id>
+    <g:title>Hyundai Stargazer Prime</g:title>
+    <g:description>Hyundai Stargazer Prime — MPV premium dengan fitur Hyundai SmartSense.</g:description>
+    <g:link>https://hyundaibsd.city/vehicle/stargazer/stargazer_prime.html</g:link>
+    <g:image_link>https://hyundaibsd.city/assets/img/vehicle/stargazer/stargazer_prime.webp</g:image_link>
+    <g:availability>in stock</g:availability>
+    <g:condition>new</g:condition>
+    <g:brand>Hyundai</g:brand>
+    <g:price>0 IDR</g:price>
+  </item>
+
+</channel>
+</rss>

@@ -14,6 +14,18 @@
     </image:image>
   </url>
 
+  <!-- Foto Showroom (Halaman Baru) -->
+  <url>
+    <loc>https://hyundaibsd.city/hyundai-bsd-city-official.html</loc>
+    <lastmod>2025-02-24T12:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hyundaibsd.city/assets/foto/highlight.webp</image:loc>
+    </image:image>
+  </url>
+
+
   <!-- Price List -->
   <url>
     <loc>https://hyundaibsd.city/pricelist.html</loc>
