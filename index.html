@@ -155,27 +155,31 @@
   <div class="top-slider">
 
     <div class="slide active">
-      <img src="assets/img/index/hili_sg.webp" alt="Promo Hyundai Stargazer BSD City" loading="eager" fetchpriority="high">
+      <img src="assets/img/index/compressed/hili_sg.webp" alt="Promo Hyundai Stargazer BSD City" loading="eager" fetchpriority="high">
     </div>
 
     <div class="slide">
-      <img src="assets/img/index/hili_stria.webp" alt="Promo Hyundai Staria" loading="lazy">
+      <img src="assets/img/index/compressed/hili_stria.webp" alt="Promo Hyundai Staria" loading="lazy">
     </div>
 
     <div class="slide">
-      <img src="assets/img/index/hi_tcs.webp" alt="Promo Hyundai Tucson" loading="lazy">
+      <img src="assets/img/index/compressed/hi_tcs.webp" alt="Promo Hyundai Tucson" loading="lazy">
     </div>
 
     <div class="slide">
-      <img src="assets/img/index/hi_crtz.webp" alt="Promo Hyundai Creta" loading="lazy">
+      <img src="assets/img/index/compressed/hi_crtz.webp" alt="Promo Hyundai Creta" loading="lazy">
     </div>
 
     <div class="slide">
-      <img src="assets/img/index/hi_io5.webp" alt="Promo Hyundai Ioniq 5" loading="lazy">
+      <img src="assets/img/index/compressed/hi_io5.webp" alt="Promo Hyundai Ioniq 5" loading="lazy">
     </div>
 
     <div class="slide">
-      <img src="assets/img/index/hi_io6.webp" alt="Promo Hyundai Ioniq 6" loading="lazy">
+      <img src="assets/img/index/compressed/hi_kona_n.webp" alt="Promo Kona N line" loading="lazy">
+    </div>    
+
+    <div class="slide">
+      <img src="assets/img/index/compressed/hi_io6.webp" alt="Promo Hyundai Ioniq 6" loading="lazy">
     </div>
 
   </div>
@@ -185,7 +189,7 @@
 
 
 <section class="headline-box">
-  <h1>Promo Hyundai BSD City November</h1>
+  <h1>Promo Akhir tahun Hyundai BSD City Desember 2025 </h1>
   <p>Dapatkan penawaran terbaik hanya di dealer resmi Hyundai BSD</p>
 </section>
 
@@ -318,21 +322,19 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   let currentSlide = 0;
+  const slider = document.querySelector(".top-slider");
   const slides = document.querySelectorAll(".top-slider .slide");
   const total = slides.length;
 
-
   function nextSlide() {
-    slides[currentSlide].classList.remove("active");
-
     currentSlide = (currentSlide + 1) % total;
-
-    slides[currentSlide].classList.add("active");
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
   }
 
-  setInterval(nextSlide, 4000);
+  setInterval(nextSlide, 3500);
 });
 </script>
+
 
 
 
