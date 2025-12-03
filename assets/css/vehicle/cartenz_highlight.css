@@ -1,0 +1,203 @@
+/* ===========================
+   DROPDOWN + TITLE
+=========================== */
+
+.vehicle-dropdown {
+  width: 100%;
+  border: none;
+  margin: 5px 0 !important;
+  display: block;
+}
+
+.vehicle-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #002368;
+  text-align: center;
+
+  margin-top: 5px !important;
+  margin-bottom: 5px !important; /* DIPERKECIL */
+
+  padding: 12px 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+  width: fit-content;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.vehicle-main {
+  min-height: 60vh;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; /* DULU 40px */
+  margin-bottom: 0 !important;
+}
+
+.vehicle-main .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.vehicle-image {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+
+  margin: 0 auto 10px auto !important; /* DULU 40px */
+  border-radius: 12px;
+}
+
+/* ===========================
+   FEATURE SECTION (3 KOLOM)
+=========================== */
+
+.feature-section {
+  padding: 30px 0 10px !important; /* DIPERKECIL */
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  font-family: "Hyundai Sans", Arial, sans-serif;
+}
+
+.feature-subtitle {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  font-family: "Hyundai Sans", Arial, sans-serif;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  width: 300px;
+  text-align: left;
+}
+
+.feature-item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.feature-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: "Hyundai Sans", Arial, sans-serif;
+}
+
+.feature-footnote {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important; /* SUPAYA RAPET DGN SECTION BAWAH */
+  font-size: 12px;
+  color: #777;
+}
+
+/* ===========================
+   COMFORT SECTION
+=========================== */
+
+.comfort-section {
+  padding-top: 10px !important;  /* DULU 60px */
+  padding-bottom: 40px;
+  margin-top: 0 !important;
+  text-align: center;
+}
+
+.comfort-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 12px !important;
+}
+
+.comfort-subtitle {
+  max-width: 800px;
+  margin: 0 auto 28px !important;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.comfort-main-image {
+  width: 100%;
+  border-radius: 6px;
+  margin: 10px 0 30px !important;
+}
+
+.comfort-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.comfort-item {
+  width: 48%;
+  text-align: left;
+}
+
+.comfort-item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.comfort-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.comfort-note {
+  font-size: 12px;
+  color: #777;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .feature-title,
+  .comfort-title {
+    font-size: 28px;
+  }
+
+  .feature-item,
+  .comfort-item {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .feature-subtitle,
+  .comfort-subtitle {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+}
