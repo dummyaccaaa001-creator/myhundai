@@ -24,7 +24,60 @@
 
   <!-- JS -->
   <script src="assets/js/navbar.js" defer></script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "Hyundai BSD City",
+    "image": "https://hyundaibsd.com/assets/foto/showroom.webp",
+    "url": "https://hyundaibsd.com/vehicle-lineup.html",
+    "telephone": "+62-812-1317-3734",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl BSD Boulevard Utara Kav. Commercial De Park",
+      "addressLocality": "Tangerang",
+      "addressRegion": "Banten",
+      "addressCountry": "ID"
+    },
+    "openingHours": "Mo-Su 08:00-20:00",
+    "priceRange": "200000000-1500000000",
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Vehicle",
+          "name": "Hyundai Stargazer"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Vehicle",
+          "name": "Hyundai Creta"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Vehicle",
+          "name": "Hyundai Santa Fe"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Vehicle",
+          "name": "Hyundai Ioniq 5"
+        }
+      }
+    ]
+  }
+  </script>
+
 </head>
+
 
 <body class="pricelist-page">
 
@@ -57,7 +110,8 @@
 
 
 <!-- Konten utama -->
-<main role="main" class="pricelist-page">
+<main role="main">
+
   <h1>Hyundai Vehicle Line-up</h1>
 
   <section class="mb-0">
