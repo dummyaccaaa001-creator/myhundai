@@ -1,0 +1,152 @@
+/* ===========================
+   GLOBAL CONTAINER CONTROL
+=========================== */
+.feature-section .container,
+.comfort-section2 .container,
+.vehicle-main .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* ===========================
+   CARTENZ FEATURE SECTION (ATAS)
+=========================== */
+
+.feature-section {
+  padding: 90px 0 70px;
+  background: #fff;
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.feature-subtitle {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.feature-item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.feature-item h3 {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.feature-footnote {
+  max-width: 900px;
+  margin: 25px auto 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #777;
+  text-align: left;
+}
+
+
+/* ===========================
+   COMFORT / INTERIOR SECTION
+=========================== */
+
+.comfort-section2 {
+  padding: 90px 0;
+  text-align: center;
+  background: #fff;
+}
+
+.comfort-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.comfort-subtitle {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* BIG INTERIOR IMAGE */
+.comfort-main-image {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 70px;
+  display: block;
+}
+
+/* LOWER GRID */
+.comfort-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+/* FEATURE ITEM BLOCK */
+.comfort-item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.comfort-item h3 {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.comfort-note {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+  text-align: left;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .comfort-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .feature-title,
+  .comfort-title {
+    font-size: 28px;
+  }
+
+  .feature-subtitle,
+  .comfort-subtitle {
+    font-size: 15px;
+    padding: 0 16px;
+  }
+}
