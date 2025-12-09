@@ -1,22 +1,51 @@
-/* ===========================
-   GLOBAL CONTAINER CONTROL
-=========================== */
-.feature-section .container,
-.comfort-section2 .container,
+/* ============================================
+   BASIC RESET UNTUK HALAMAN KENDARAAN
+============================================ */
+.vehicle-main {
+  padding-top: 3px; /* memberi ruang agar tidak menabrak navbar */
+  padding-bottom: 4px;
+  min-height: 1vh;
+}
+
 .vehicle-main .container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
+.vehicle-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #002368;
+  text-align: center;
+  padding: 12px 24px;
+  margin: 10px auto 20px auto;
+  width: fit-content;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
 
-/* ===========================
-   CARTENZ FEATURE SECTION (ATAS)
-=========================== */
+.vehicle-image {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 40px auto;
+}
 
+
+/* ============================================
+   FEATURE SECTION (ATAS)
+============================================ */
 .feature-section {
-  padding: 90px 0 70px;
+  padding: 9px 0 70px;
   background: #fff;
   text-align: center;
+}
+
+.feature-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .feature-title {
@@ -43,7 +72,7 @@
 
 .feature-item img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 8px;
   margin-bottom: 14px;
 }
 
@@ -57,20 +86,24 @@
   max-width: 900px;
   margin: 25px auto 0;
   font-size: 12px;
-  line-height: 1.6;
   color: #777;
+  line-height: 1.6;
   text-align: left;
 }
 
 
-/* ===========================
-   COMFORT / INTERIOR SECTION
-=========================== */
-
+/* ============================================
+   INTERIOR / COMFORT SECTION
+============================================ */
 .comfort-section2 {
   padding: 90px 0;
-  text-align: center;
   background: #fff;
+  text-align: center;
+}
+
+.comfort-section2 .container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .comfort-title {
@@ -82,12 +115,11 @@
 .comfort-subtitle {
   max-width: 900px;
   margin: 0 auto 50px;
-  color: #555;
-  line-height: 1.6;
   font-size: 16px;
+  line-height: 1.6;
+  color: #555;
 }
 
-/* BIG INTERIOR IMAGE */
 .comfort-main-image {
   width: 100%;
   max-width: 1200px;
@@ -95,17 +127,15 @@
   display: block;
 }
 
-/* LOWER GRID */
 .comfort-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
 }
 
-/* FEATURE ITEM BLOCK */
 .comfort-item img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 8px;
   margin-bottom: 14px;
 }
 
@@ -123,10 +153,43 @@
 }
 
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+/* ============================================
+   INTERNAL LINKS (BAWAHAN)
+============================================ */
+.vehicle-internal-links {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
 
+.vehicle-internal-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+}
+
+.vehicle-internal-links li {
+  margin: 6px 0;
+}
+
+.vehicle-internal-links a {
+  color: #002368;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.vehicle-internal-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* ============================================
+   RESPONSIVE
+============================================ */
 @media (max-width: 992px) {
   .feature-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -138,7 +201,16 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
+  .vehicle-title {
+    font-size: 18px;
+    padding: 10px 16px;
+  }
+
+  .vehicle-image {
+    margin-bottom: 30px;
+  }
+
   .feature-title,
   .comfort-title {
     font-size: 28px;
@@ -146,7 +218,26 @@
 
   .feature-subtitle,
   .comfort-subtitle {
-    font-size: 15px;
     padding: 0 16px;
+    font-size: 15px;
+  }
+
+  /* Bikin container full width */
+  .feature-section .container,
+  .comfort-section2 .container {
+    max-width: 100% !important;
+    padding: 0 14px;
+  }
+
+  /* Feature grid jadi 1 kolom */
+  .feature-grid {
+    grid-template-columns: 1fr !important;
+    gap: 26px;
+  }
+
+  /* Comfort grid juga 1 kolom */
+  .comfort-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
   }
 }

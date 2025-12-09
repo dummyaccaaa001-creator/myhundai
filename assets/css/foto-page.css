@@ -75,3 +75,28 @@ main.foto-page {
 @media (max-width: 600px) { 
   .gallery { columns: 1; }
 }
+.internal-links {
+  margin: 40px auto;
+  padding: 20px 15px;
+  max-width: 900px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.internal-links h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.internal-links ul {
+  padding-left: 18px;
+  line-height: 1.7;
+}
+
+.internal-links a {
+  color: #005baa;
+  text-decoration: none;
+}
+
+.internal-links a:hover {
+  text-decoration: underline;
+}

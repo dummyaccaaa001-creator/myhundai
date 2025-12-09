@@ -1,203 +1,263 @@
 /* ===========================
-   DROPDOWN + TITLE
+   GLOBAL CONTAINER WIDTH
 =========================== */
-
-.vehicle-dropdown {
-  width: 100%;
-  border: none;
-  margin: 5px 0 !important;
-  display: block;
+.feature-section .container,
+.comfort-section .container,
+.vehicle-main .container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+/* ===========================
+   VEHICLE TITLE & IMAGE (Ikuti style Stargazer)
+=========================== */
+
 .vehicle-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   color: #002368;
   text-align: center;
 
-  margin-top: 5px !important;
-  margin-bottom: 5px !important; /* DIPERKECIL */
+  margin: 10px auto 20px auto;
+  padding: 14px 26px;
 
-  padding: 12px 25px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 
   width: fit-content;
   max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
-
-/* ===========================
-   MAIN CONTENT
-=========================== */
 
 .vehicle-main {
-  min-height: 60vh;
   padding-top: 0 !important;
-  padding-bottom: 0 !important; /* DULU 40px */
-  margin-bottom: 0 !important;
+  padding-bottom: 4px;
+  min-height: 1vh;
 }
-
-.vehicle-main .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* ===========================
-   IMAGE
-=========================== */
 
 .vehicle-image {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   height: auto;
-  display: block;
 
-  margin: 0 auto 10px auto !important; /* DULU 40px */
+  display: block;
+  margin: 0 auto 40px auto;
   border-radius: 12px;
 }
 
 /* ===========================
-   FEATURE SECTION (3 KOLOM)
+   FEATURE SECTION (Bagian Atas)
 =========================== */
 
 .feature-section {
-  padding: 30px 0 10px !important; /* DIPERKECIL */
-  text-align: center;
+  padding: 8px 0 6px;
+  background: #fff;
 }
 
 .feature-title {
-  font-size: 36px;
+  font-family: Hyundai Sans, Arial, sans-serif;
+  font-size: 34px;
   font-weight: 700;
-  margin: 0 0 16px;
-  font-family: "Hyundai Sans", Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 14px;
+  color: #000;
 }
 
 .feature-subtitle {
-  max-width: 800px;
-  margin: 0 auto 30px;
+  max-width: 780px;
+  margin: 0 auto 55px;
   font-size: 16px;
-  color: #444;
-  line-height: 1.6;
-  font-family: "Hyundai Sans", Arial, sans-serif;
+  line-height: 1.7;
+  text-align: center;
+  color: #555;
 }
 
 .feature-grid {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.feature-item {
-  width: 300px;
-  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
 }
 
 .feature-item img {
   width: 100%;
-  border-radius: 6px;
-  margin-bottom: 12px;
+  border-radius: 10px;
+  margin-bottom: 16px;
 }
 
 .feature-item h3 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.4;
-  font-family: "Hyundai Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
 }
 
 .feature-footnote {
-  margin-top: 10px !important;
-  margin-bottom: 10px !important; /* SUPAYA RAPET DGN SECTION BAWAH */
+  max-width: 800px;
+  margin: 25px auto 0;
+  font-size: 12px;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* ===========================
+   COMFORT / INTERIOR SECTION
+=========================== */
+
+.comfort-section {
+  padding: 80px 0;
+  background: #fff;
+  text-align: center; /* ← WAJIB */
+}
+
+.comfort-title {
+  font-size: 34px;
+  font-family: Hyundai Sans, Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #000; /* ← ini yang hilang */
+}
+
+
+.comfort-subtitle {
+  max-width: 780px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.comfort-main-image {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 60px;
+}
+
+.comfort-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px;
+}
+
+.comfort-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+.comfort-item h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+.comfort-note {
+  margin-top: 4px;
   font-size: 12px;
   color: #777;
 }
 
 /* ===========================
-   COMFORT SECTION
+   INTERNAL LINKS BOX
 =========================== */
 
-.comfort-section {
-  padding-top: 10px !important;  /* DULU 60px */
-  padding-bottom: 40px;
-  margin-top: 0 !important;
-  text-align: center;
+.vehicle-internal-links {
+  max-width: 900px;
+  margin: 20px auto 40px auto;
+
+  background: #ffffff;
+  padding: 20px 26px;
+
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
-.comfort-title {
-  font-size: 36px;
-  font-weight: 700;
-  margin: 0 0 12px !important;
+.vehicle-internal-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.comfort-subtitle {
-  max-width: 800px;
-  margin: 0 auto 28px !important;
-  font-size: 16px;
-  color: #444;
-  line-height: 1.6;
+.vehicle-internal-links li {
+  margin: 6px 0;
 }
 
-.comfort-main-image {
-  width: 100%;
-  border-radius: 6px;
-  margin: 10px 0 30px !important;
+.vehicle-internal-links a {
+  font-weight: 600;
+  color: #002368;
+  text-decoration: none;
 }
 
-.comfort-grid {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.comfort-item {
-  width: 48%;
-  text-align: left;
-}
-
-.comfort-item img {
-  width: 100%;
-  border-radius: 6px;
-  margin-bottom: 12px;
-}
-
-.comfort-item h3 {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.comfort-note {
-  font-size: 12px;
-  color: #777;
+.vehicle-internal-links a:hover {
+  text-decoration: underline;
 }
 
 /* ===========================
    RESPONSIVE
 =========================== */
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+
+  .comfort-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
   .feature-title,
   .comfort-title {
     font-size: 28px;
   }
+}
 
-  .feature-item,
-  .comfort-item {
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
+/* MOBILE ≤ 576px */
+@media (max-width: 576px) {
+
+  /* Container full width */
+  .feature-section .container,
+  .comfort-section .container {
+    max-width: 100% !important;
+    padding: 0 14px;
   }
 
+  /* Subtitle */
   .feature-subtitle,
   .comfort-subtitle {
+    padding: 0 16px;
     font-size: 15px;
-    padding: 0 20px;
   }
+
+  .vehicle-title {
+    font-size: 18px;
+    padding: 10px 18px;
+  }
+
+  /* Feature grid → 1 kolom */
+  .feature-grid {
+    grid-template-columns: 1fr !important;
+    gap: 26px;
+  }
+
+  .feature-item img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+  }
+
+  .feature-item h3 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  /* Comfort image */
+  .comfort-main-image {
+    border-radius: 12px;
+  }
+
 }
+
