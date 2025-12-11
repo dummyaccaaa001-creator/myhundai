@@ -1,0 +1,130 @@
+/* =========================================
+   BOOKING SERVICE PAGE STYLE
+========================================= */
+
+/* Spacing agar tidak ketutup header */
+.page-booking {
+  padding-top: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+/* Hero Section */
+.hero-booking {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-booking h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hero-booking p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* =========================================
+   FORM STYLE
+========================================= */
+
+.booking-form {
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 14px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.07);
+  display: grid;
+  gap: 18px;
+}
+
+/* Judul Section */
+.booking-form h2 {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #10375c;
+}
+
+/* Label */
+.booking-form label {
+  font-weight: 600;
+  margin-bottom: -8px;
+  color: #333;
+}
+
+/* Input & Select */
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus state */
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border-color: #0071e3;
+  box-shadow: 0 0 0 3px rgba(0,113,227,0.12);
+}
+
+/* Textarea */
+.booking-form textarea {
+  resize: vertical;
+}
+
+/* Button */
+.booking-form .btn-book {
+  background: #0071e3;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 10px;
+}
+
+.booking-form .btn-book:hover {
+  background: #005bb5;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .page-booking {
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .booking-form {
+    padding: 25px;
+  }
+
+  .hero-booking h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-form {
+    padding: 20px;
+  }
+
+  .booking-form h2 {
+    font-size: 20px;
+  }
+}

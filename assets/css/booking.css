@@ -1,10 +1,11 @@
 /* ======== Spacing supaya tidak ketutup header ======== */
 .page-booking {
-  padding-top: 1200px; /* Atur sesuai tinggi header kamu */
+  padding-top: 25px; /* Atur sesuai tinggi header kamu */
   max-width: 1100px;
   margin: 0 auto;
   padding-bottom: 60px;
 }
+
 
 /* ======== Hero Title ======== */
 .hero-booking {
@@ -16,6 +17,7 @@
   font-size: 32px;
   margin-bottom: 10px;
   font-weight: 700;
+  
 }
 
 /* ======== Grid pilihan booking ======== */

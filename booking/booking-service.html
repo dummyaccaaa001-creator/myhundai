@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <!-- Metadata Dasar -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO -->
-  <title>GJAW 2025 — Hyundai Luncurkan Mobil Ini</title>
-  <meta name="description" content="Hyundai resmi memperkenalkan model terbaru di GJAW 2025. Simak fitur, teknologi, dan detail lengkapnya di sini.">
-  <meta name="keywords" content="GJAW 2025, Hyundai GJAW, Hyundai BSD City, Mobil Baru Hyundai, Event Hyundai 2025">
-  <meta name="robots" content="index, follow">
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://hyundaibsd.city/news/gjaw2025.html">
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Booking Service - Hyundai BSD City</title>
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="../favicon.png">
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -22,14 +11,15 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../assets/css/news-detail.css">
-  <link rel="stylesheet" href="../assets/css/news/gjaw2025.css">
+  <link rel="stylesheet" href="../assets/css/booking/service.css">
 
 
   <!-- JS -->
   <script src="../assets/js/navbar.js" defer></script>
 </head>
-<body>
+
+<body class="article-page">
+
 <!-- Header -->
 <header>
   <!-- Logo Hyundai kiri -->
@@ -60,78 +50,64 @@
   </nav>
 
   <!-- Logo Doty 2025 di kanan -->
-  <a href="../news/doty25.html" class="logo-kanan" aria-label="Doty 2025">
+  <a href="#" class="logo-kanan" aria-label="Doty 2025">
     <img src="../assets/logos/doty-2025-logo.webp" alt="Doty 2025 Logo">
   </a>
 </header>
 
-<main class="news-detail">
-
-  <!-- Hero Image -->
-  <div class="news-hero">
-    <img src="../assets/img/news/gjaw2025.webp" alt="Hyundai di GJAW 2025">
+<!-- PAGE CONTENT -->
+<section class="page-booking">
+  <div class="hero-booking">
+    <h1>Booking Service</h1>
+    <p>Silakan isi formulir berikut untuk melakukan booking layanan.</p>
   </div>
 
-  <h1>GJAW 2025 — Hyundai Luncurkan Mobil Ini!</h1>
-  <p class="date">Dipublikasikan: 27 November 2025</p>
+  <form class="booking-form">
+    <h2>Data Pemilik</h2>
 
+    <label>Nama Lengkap</label>
+    <input type="text" name="nama" required />
 
-  <p>
-    Gaikindo Jakarta Auto Week (GJAW) 2025 resmi digelar dan kembali menjadi panggung besar bagi dunia otomotif Indonesia.
-    Hyundai hadir sebagai salah satu brand yang paling menarik perhatian setelah resmi 
-    <strong>meluncurkan satu model terbaru</strong> yang langsung menjadi sorotan pengunjung.
-  </p>
+    <label>No. Telepon / WhatsApp</label>
+    <input type="tel" name="telepon" required />
 
-  <h2>Model Baru dengan Desain Lebih Berani</h2>
-  <p>
-    Model yang diperkenalkan hadir dengan tampilan eksterior yang lebih agresif, lampu LED baru, serta garis bodi yang lebih tegas. 
-    Perubahan ini membuat mobil tampil lebih futuristis sekaligus tetap mempertahankan karakter khas Hyundai.
-  </p>
+    <label>Email</label>
+    <input type="email" name="email" />
 
-  <p>Bagian interior juga mendapatkan peningkatan signifikan:</p>
-  <ul>
-    <li>Material kabin yang lebih premium</li>
-    <li>Panel instrumen lebih modern</li>
-    <li>Sistem infotainment lebih cepat & responsif</li>
-    <li>Konektivitas lengkap untuk kebutuhan digital masa kini</li>
-  </ul>
+    <h2>Data Kendaraan</h2>
 
-  <h2>Fitur SmartSense Generasi Terbaru</h2>
-  <p>
-    Salah satu daya tarik terbesar adalah hadirnya fitur <strong>Hyundai SmartSense generasi terbaru</strong> 
-    yang kini lebih akurat dan responsif. Fitur ini mencakup sistem bantuan keselamatan yang telah disempurnakan.
-  </p>
+    <label>Model Hyundai</label>
+    <input type="text" name="model" required />
 
-  <ul>
-    <li>Forward Collision-Avoidance Assist</li>
-    <li>Lane Keeping Assist</li>
-    <li>Blind-Spot Collision Warning</li>
-    <li>Smart Cruise Control</li>
-  </ul>
+    <label>No. Polisi</label>
+    <input type="text" name="nopol" />
 
-  <h2>Dapat Dicoba Langsung di Area Test Drive</h2>
-  <p>
-    Hyundai juga menyediakan unit test drive bagi pengunjung yang ingin merasakan langsung kenyamanan dan performa dari model terbaru ini. 
-    Banyak pengunjung memberikan respons positif terutama pada sektor handling dan akselerasi.
-  </p>
+    <label>Kilometer Saat Ini</label>
+    <input type="number" name="km" />
 
-  <h2>Harga & Ketersediaan</h2>
-  <p>
-    Meski sudah diperkenalkan secara resmi, Hyundai belum mengumumkan harga final. 
-    Informasi harga diperkirakan akan dirilis setelah GJAW 2025 berakhir dan unit diperkirakan mulai tersedia di dealer resmi 
-    pada kuartal berikutnya.
-  </p>
+    <h2>Detail Booking</h2>
 
-  <p>
-    Bagi Anda yang tidak sempat hadir ke pameran, Anda tetap bisa mendapatkan informasi lengkap melalui dealer Hyundai BSD City 
-    mengenai ketersediaan unit, promo, serta jadwal test drive.
-  </p>
+    <label>Pilih Jenis Layanan</label>
+    <select name="jenis" required>
+      <option value="">-- Pilih Layanan --</option>
+      <option value="service-berkala">Service Berkala</option>
+      <option value="perbaikan">Perbaikan</option>
+      <option value="emergency">Emergency</option>
+    </select>
 
-  <a href="https://wa.me/6283123426461?text=Halo%20Kak%20Alson,%20saya%20ingin%20info%20mengenai%20mobil%20baru%20Hyundai%20di%20GJAW%202025"
-     class="cta-news">
-    Hubungi Kami untuk Info Lengkap →
-  </a>
-</main>
+    <label>Tanggal Servis</label>
+    <input type="date" name="tanggal" required />
+
+    <label>Jam Servis</label>
+    <input type="time" name="jam" required />
+
+    <label>Keterangan Tambahan</label>
+    <textarea name="catatan" rows="4" placeholder="Keluhan atau permintaan khusus..."></textarea>
+
+    <button type="submit" class="btn-book">Kirim Booking</button>
+  </form>
+
+</section>
 
 <!-- FOOTER -->
 <footer>
