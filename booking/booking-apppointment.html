@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Booking Service - Hyundai BSD City</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Appointment | Hyundai BSD City</title>
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="../favicon.png">
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -11,17 +11,15 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../assets/css/booking/service.css">
+  <link rel="stylesheet" href="../assets/css/booking/appointment.css">
 
 
   <!-- JS -->
   <script src="../assets/js/navbar.js" defer></script>
+
 </head>
-
-<body class="article-page">
-
-<!-- Header -->
-<header>
+<body>
+    <header>
   <!-- Logo Hyundai kiri -->
   <a href="../index.html" class="logo-link" aria-label="Kembali ke Beranda">
     <img src="../ico-logo.png" alt="Dealer Hyundai BSD City Logo" class="logo">
@@ -50,37 +48,104 @@
   </nav>
 
   <!-- Logo Doty 2025 di kanan -->
-  <a href="#" class="logo-kanan" aria-label="Doty 2025">
+  <a href="" class="logo-kanan" aria-label="Doty 2025"><a href="../news/doty25.html" class="logo-kanan" aria-label="Doty 2025">
+
     <img src="../assets/logos/doty-2025-logo.webp" alt="Doty 2025 Logo">
   </a>
 </header>
 
-<!-- PAGE CONTENT -->
-<section class="page-booking">
-  <div class="hero-booking">
-    <h1>Booking Service</h1>
-    <p>Silakan isi formulir berikut untuk melakukan booking layanan.</p>
+
+<section class="booking-section">
+  <h1>Book Appointment</h1>
+  <p>Isi form di bawah ini, tim kami akan langsung menghubungi Anda via WhatsApp.</p>
+
+<form id="bookingForm">
+
+  <div class="form-group">
+    <label for="nama">Nama Lengkap</label>
+    <input type="text" id="nama" required>
   </div>
 
-<form id="f">
-  <input id="n" placeholder="Nama">
-  <button>Kirim</button>
+  <div class="form-group">
+    <label for="phone">Nomor WhatsApp</label>
+    <input type="tel" id="phone" placeholder="08xxxxxxxxxx" required>
+  </div>
+
+  <div class="form-group">
+    <label for="model">Model Hyundai</label>
+    <select id="model" required>
+      <option value="">Pilih Model</option>
+      <option>Stargazer</option>
+      <option>Creta</option>
+      <option>Venue</option>
+      <option>Elantra</option>
+      <option>Accent</option>
+      <option>Lainnya</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="tanggal">Tanggal Appointment</label>
+    <input type="date" id="tanggal" required>
+  </div>
+
+  <!-- 🔥 JAM APPOINTMENT -->
+  <div class="form-group">
+    <label for="jam">Jam Appointment</label>
+    <select id="jam" required>
+      <option value="">Pilih Jam</option>
+      <option>09:00</option>
+      <option>10:00</option>
+      <option>11:00</option>
+      <option>13:00</option>
+      <option>14:00</option>
+      <option>15:00</option>
+      <option>16:00</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="catatan">Catatan Tambahan</label>
+    <textarea id="catatan" rows="3"></textarea>
+  </div>
+
+  <button type="submit" class="btn-book">Kirim via WhatsApp</button>
+
 </form>
-
-
 
 </section>
 
+
 <script>
-document.getElementById("f").onsubmit = function(e) {
+document.getElementById("bookingForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const nama = document.getElementById("n").value;
-  const pesan = "TEST WA " + nama;
+  const nama = document.getElementById("nama").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const model = document.getElementById("model").value;
+  const tanggal = document.getElementById("tanggal").value;
+  const jam = document.getElementById("jam").value;
+  const catatan = document.getElementById("catatan").value.trim();
 
-  const url = "https://wa.me/6282112994089?text=" + encodeURIComponent(pesan);
+  const pesan =
+`Halo Hyundai BSD City 
+
+Saya ingin booking appointment dengan detail berikut:
+
+Nama: ${nama}
+No. WhatsApp: ${phone}
+Model Hyundai: ${model}
+Tanggal Appointment: ${tanggal}
+Jam Appointment: ${jam}
+Catatan: ${catatan || "-"}
+
+Terima kasih `;
+
+  const nomorWA = "6283123426461"; // 0831 → 62831
+  const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
+
   window.open(url, "_blank");
-};
+});
 </script>
 
 <!-- FOOTER -->
