@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Test Drive | Hyundai BSD City</title>
+
+  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../assets/css/booking/testdrive.css">
+
+  <script src="../assets/js/navbar.js" defer></script>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <a href="../index.html" class="logo-link">
+    <img src="../ico-logo.png" alt="Dealer Hyundai BSD City Logo" class="logo">
+  </a>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="../pricelist.html">Price List</a></li>
+      <li><a href="../vehicles.html">Vehicle</a></li>
+      <li><a href="../promo.html">Promo</a></li>
+      <li><a href="../program.html">Program</a></li>
+      <li><a href="../booking.html" class="active">Booking</a></li>
+      <li><a href="../community.html">Community</a></li>
+      <li><a href="../kontak.html">Branch</a></li>
+      <li><a href="../karir.html">Career</a></li>
+      <li><a href="../news.html">News</a></li>
+    </ul>
+  </nav>
+
+  <a href="../news/doty25.html" class="logo-kanan">
+    <img src="../assets/logos/doty-2025-logo.webp" alt="Doty 2025 Logo">
+  </a>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="page-booking">
+
+  <section class="hero-booking">
+    <h1>Booking Test Drive</h1>
+    <p>Isi formulir berikut untuk menjadwalkan test drive Hyundai pilihan Anda.</p>
+  </section>
+
+  <form id="testDriveForm" class="booking-form">
+
+    <div class="form-group">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Nomor WhatsApp</label>
+      <input type="tel" id="phone" placeholder="08xxxxxxxxxx" required>
+    </div>
+
+    <div class="form-group">
+      <label for="mobil">Model Hyundai</label>
+      <select id="mobil" required>
+        <option value="">Pilih Model</option>
+        <option>Stargazer</option>
+        <option>Creta</option>
+        <option>Venue</option>
+        <option>Elantra</option>
+        <option>Ioniq 5</option>
+        <option>Lainnya</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="tanggal">Tanggal Test Drive</label>
+      <input type="date" id="tanggal" required>
+    </div>
+
+    <div class="form-group">
+      <label for="jam">Jam Test Drive</label>
+      <input type="time" id="jam" required>
+    </div>
+
+    <div class="form-group">
+      <label for="catatan">Catatan Tambahan</label>
+      <textarea id="catatan" rows="3"></textarea>
+    </div>
+
+    <button type="submit" class="btn-book">Kirim via WhatsApp</button>
+  </form>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-left">
+        <img src="https://hyundaimobil.co.id/assets/img/logo-footer.png" alt="Hyundai Logo">
+        <div class="footer-info">
+          <h1>PT Hyundai Mobil Indonesia</h1>
+          <a href="https://hyundaimobil.co.id/news/details/waspada-penipuan-transaksi-aman-hanya-ke-rekening-pt-hyundai-mobil-indonesia" target="_blank">
+            Segala Bentuk Transaksi Hanya Melalui Rekening Resmi PT HYUNDAI MOBIL INDONESIA
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Hyundai Mobil Indonesia. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+document.getElementById("testDriveForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const nama = document.getElementById("nama").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const mobil = document.getElementById("mobil").value;
+  const tanggal = document.getElementById("tanggal").value;
+  const jam = document.getElementById("jam").value;
+  const catatan = document.getElementById("catatan").value.trim();
+
+  const pesan =
+`Halo Hyundai BSD City
+
+Saya ingin booking TEST DRIVE dengan detail berikut:
+
+Nama: ${nama}
+No. WhatsApp: ${phone}
+Model Hyundai: ${mobil}
+Tanggal: ${tanggal}
+Jam: ${jam}
+Catatan: ${catatan || "-"}
+
+Terima kasih.`;
+
+  const nomorWA = "6283123426461";
+  const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
+
+  window.open(url, "_blank");
+});
+</script>
+
+</body>
+</html>

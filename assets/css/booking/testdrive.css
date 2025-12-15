@@ -1,0 +1,101 @@
+/* ===============================
+   PAGE BOOKING TEST DRIVE
+================================ */
+
+.page-booking {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+/* ===== HERO ===== */
+.hero-booking {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-booking h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.hero-booking p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* ===== FORM ===== */
+.booking-form {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.15);
+}
+
+/* ===== BUTTON ===== */
+.btn-book {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.1s;
+}
+
+.btn-book:hover {
+  background: #005fcc;
+}
+
+.btn-book:active {
+  transform: scale(0.98);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .booking-form {
+    padding: 20px;
+  }
+
+  .hero-booking h1 {
+    font-size: 26px;
+  }
+}
