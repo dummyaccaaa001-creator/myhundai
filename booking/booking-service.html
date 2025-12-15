@@ -62,26 +62,108 @@
     <p>Silakan isi formulir berikut untuk melakukan booking layanan.</p>
   </div>
 
-<form id="f">
-  <input id="n" placeholder="Nama">
-  <button>Kirim</button>
+<form class="booking-form" id="serviceBookingForm">
+
+  <div class="form-group">
+    <label for="nama">Nama Lengkap</label>
+    <input type="text" id="nama" required>
+  </div>
+
+  <div class="form-group">
+    <label for="nopol">No. Polisi Kendaraan</label>
+    <input type="text" id="nopol" required>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">No. Telepon / WhatsApp</label>
+    <input type="tel" id="phone" required>
+  </div>
+
+  <div class="form-group">
+    <label for="service">Jenis Service</label>
+    <select id="service" required>
+      <option value="">Pilih Jenis Service</option>
+      <option value="Service Berkala">Service Berkala</option>
+      <option value="Perbaikan">Perbaikan</option>
+      <option value="Emergency">Emergency</option>
+      <option value="Lainnya">Lainnya</option>
+    </select>
+  </div>
+
+  <div class="form-group" id="serviceLainnyaGroup" style="display:none;">
+    <label for="serviceLainnya">Jelaskan Service</label>
+    <input type="text" id="serviceLainnya">
+  </div>
+
+  <div class="form-group">
+    <label for="tanggal">Tanggal Service</label>
+    <input type="date" id="tanggal" required>
+  </div>
+
+  <div class="form-group">
+    <label for="jam">Jam Service</label>
+    <input type="time" id="jam" required>
+  </div>
+
+  <button type="submit" class="btn-book">Kirim via WhatsApp</button>
+
 </form>
+
 
 
 
 </section>
 
 <script>
-document.getElementById("f").onsubmit = function(e) {
+const form = document.getElementById("serviceBookingForm");
+const serviceSelect = document.getElementById("service");
+const serviceLainnyaGroup = document.getElementById("serviceLainnyaGroup");
+const serviceLainnyaInput = document.getElementById("serviceLainnya");
+
+// toggle input "Lainnya"
+serviceSelect.addEventListener("change", function () {
+  if (this.value === "Lainnya") {
+    serviceLainnyaGroup.style.display = "block";
+    serviceLainnyaInput.required = true;
+  } else {
+    serviceLainnyaGroup.style.display = "none";
+    serviceLainnyaInput.required = false;
+    serviceLainnyaInput.value = "";
+  }
+});
+
+// submit form
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const nama = document.getElementById("n").value;
-  const pesan = "TEST WA " + nama;
+  const nama = document.getElementById("nama").value.trim();
+  const nopol = document.getElementById("nopol").value.trim().toUpperCase();
+  const phone = document.getElementById("phone").value.trim();
+  const tanggal = document.getElementById("tanggal").value;
+  const jam = document.getElementById("jam").value;
 
-  const url = "https://wa.me/6282112994089?text=" + encodeURIComponent(pesan);
+  let service = serviceSelect.value;
+  if (service === "Lainnya" && serviceLainnyaInput.value.trim()) {
+    service = "Lainnya - " + serviceLainnyaInput.value.trim();
+  }
+
+  const pesan =
+`📌 Booking Service Hyundai BSD City
+
+👤 Nama: ${nama}
+🚗 No Polisi: ${nopol}
+📱 No WhatsApp: ${phone}
+🛠️ Jenis Service: ${service}
+📅 Tanggal: ${tanggal}
+⏰ Jam: ${jam}`;
+
+  const nomorWA = "6282112994089";
+  const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
+
   window.open(url, "_blank");
-};
+});
 </script>
+
 
 <!-- FOOTER -->
 <footer>
