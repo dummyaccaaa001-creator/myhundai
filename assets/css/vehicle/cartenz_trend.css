@@ -230,3 +230,9 @@ table th {
   color: #00e0ff;
 }
 
+.price-note {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 12px;
+  color: #666;
+}
