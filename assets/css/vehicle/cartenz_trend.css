@@ -1,0 +1,232 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: #0b1c2d;
+  color: #fff;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.hero-image {
+  background: url("../../img/vehicle/cartenz/trendmt/cartenz_trend.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 480px;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.price-normal {
+  font-size: 15px;
+  color: #9aa0a6;
+  text-decoration: line-through;
+  margin-bottom: 15px;
+}
+
+/* KARTU HARGA */
+.price-box {
+  display: inline-block;
+  background: #ffffff;
+  border: 2px solid #00a8e8;
+  border-radius: 10px;
+  padding: 18px 32px;
+  margin-bottom: 20px;
+}
+
+.price-box .label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #00a8e8;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.price-box .price {
+  font-size: 34px;
+  font-weight: 800;
+  color: #003a8f; /* biru gelap, lebih kebaca */
+}
+
+/* SUBTITLE */
+.hero-text .subtitle {
+  font-size: 15px;
+  color: #444;
+  margin: 20px auto 30px;
+  max-width: 600px;
+}
+
+/* BUTTON */
+.btn-primary {
+  background: #00a8e8;
+  color: #fff;
+  padding: 12px 34px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: #008fc4;
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    height: 300px;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero-text .price {
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+
+.badge {
+  display: inline-block;
+  background: #00a8e8;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+
+.btn-primary {
+  display: inline-block;
+  background: #00a8e8;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: #008fc4;
+}
+
+/* ===== CONTENT ===== */
+.content {
+  padding: 60px 0;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.features ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.features li {
+  margin-bottom: 8px;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background: #f4f4f4;
+  width: 30%;
+}
+
+
+.price-special {
+  display: inline-block;
+  background: rgba(0, 168, 232, 0.15);
+  border: 2px solid #00a8e8;
+  padding: 12px 22px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.price-special .label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #00e0ff;
+  margin-bottom: 4px;
+}
+
+.price-special .price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00e0ff;
+}
+
