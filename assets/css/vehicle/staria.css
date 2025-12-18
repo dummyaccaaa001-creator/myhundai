@@ -1,160 +1,153 @@
-/* RESET */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222;
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px;
-}
-
-/* ================= HEADER ================= */
-.site-header {
-  background: #000;
-  color: #fff;
-  padding: 15px 0;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.main-nav a {
-  margin-left: 20px;
-  font-size: 14px;
-  color: #fff;
-}
-
-.main-nav a.active,
-.main-nav a:hover {
-  text-decoration: underline;
-}
-
 /* ================= HERO ================= */
+
 .hero {
-  min-height: 70vh;
-  background: url("../img/staria/staria-hero.webp") center / cover no-repeat;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
-.hero-overlay {
-  background: rgba(0,0,0,0.55);
+  height: 100vh;
   width: 100%;
-  padding: 60px 0;
-}
-
-.hero-content h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  max-width: 600px;
-}
-
-.btn-primary {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 30px;
-  background: #0a5cff;
+  position: relative;
+  background: url("../../img/vehicle/staria/Staria_PIP_Banner_D.avif")
+              right center / cover no-repeat;
+  overflow: hidden;
   color: #fff;
-  border-radius: 4px;
-  font-weight: bold;
+}
+
+/* Gradient overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.7) 0%,
+    rgba(0,0,0,0.45) 25%,
+    rgba(0,0,0,0.2) 40%,
+    rgba(0,0,0,0) 60%
+  );
+  z-index: 1;
+}
+
+/* Content block */
+.hero-content {
+  position: absolute;
+  left: 80px;
+  bottom: 120px;
+  max-width: 520px;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Title */
+.hero-title {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* Tagline */
+.hero-tagline {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Price */
+.hero-price {
+  margin-top: 32px;
+}
+
+.hero-price span {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+}
+
+.hero-price strong {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* CTA Desktop */
+.btn-primary {
+  position: absolute;
+  right: 80px;
+  bottom: 80px;
+  z-index: 2;
+
+  padding: 14px 28px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background: #0848c9;
+  background: #fff;
+  color: #000;
 }
 
-/* ================= CONTENT ================= */
-.section {
-  padding: 60px 0;
-}
+/* ================= TABLET ================= */
 
-.section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
-}
-
-.feature-box {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 25px;
-}
-
-.feature-box h3 {
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-/* ================= FOOTER ================= */
-.site-footer {
-  background: #111;
-  color: #ccc;
-  padding: 40px 0;
-}
-
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.site-footer h4 {
-  color: #fff;
-  margin-bottom: 15px;
-}
-
-.site-footer a {
-  font-size: 14px;
-  color: #ccc;
-}
-
-.site-footer a:hover {
-  color: #fff;
-}
-
-.copyright {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 13px;
-  color: #777;
-}
-
-/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 32px;
+  .hero {
+    background-position: 75% center;
+  }
+
+  .hero-content {
+    left: 40px;
+    bottom: 120px;
+    max-width: 420px;
+  }
+
+  .hero-title {
+    font-size: 36px;
   }
 }
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+  .hero {
+    height: 100svh;
+    background-image: url("../../img/vehicle/staria/Staria_PIP_Banner_M.avif");
+    background-position: center 85%;
+    background-size: 115%;
+  }
+
+  .hero-content {
+    left: 24px;
+    right: 24px;
+    top: 120px;   /* 🔥 BUKAN bottom */
+    bottom: auto;
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-tagline {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .hero-price {
+    margin-top: 12px;
+  }
+    .hero-price strong {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  /* CTA jadi floating */
+  .btn-primary {
+    position: fixed;
+    right: 20px;
+    bottom: 24px;
+    z-index: 50;
+    border-radius: 999px;
+    padding: 14px 18px;
+  }
+}
+
