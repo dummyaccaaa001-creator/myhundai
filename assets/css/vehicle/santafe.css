@@ -253,5 +253,18 @@ body {
     font-size: 15px;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("../../img/vehicle/santafe/all-new-santa-fe-m-414X775.avif");
+    background-position: center top;
+  }
+  .hero-text {
+    margin-top: 72px;        /* GANTI padding-top */
+    padding: 0 20px;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+}
 
 
