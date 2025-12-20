@@ -96,52 +96,73 @@ body {
   font-size: 14px;
 }
 
-/* CTA */
-.cta {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 80px 0;
+/* ======================================================
+   INTERNAL NAVIGATION (CSS IMAGE)
+====================================================== */
+
+.internal-nav-section {
+  width: 100%;
 }
 
-.btn-primary {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 32px;
-  background: #0a5cff;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 4px;
-}
-
-/* FOOTER */
-.site-footer {
-  background: #111;
-  color: #ccc;
-  padding: 40px 0;
-}
-
-.footer-container {
+/* GRID */
+.internal-nav-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: 1fr 1fr;
 }
 
-.site-footer h4 {
+/* CARD */
+.internal-nav-card {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+  text-decoration: none;
   color: #fff;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.site-footer a {
-  color: #ccc;
+/* IMAGE SOURCE */
+.nav-home {
+  background-image: url("/assets/img/showroom-bsd.webp");
 }
 
-.copyright {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 13px;
-  color: #777;
+.nav-vehicle {
+  background-image: url("../../img/vehicle/all.avif");
 }
 
+/* OVERLAY */
+.internal-nav-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  transition: background 0.3s ease;
+}
+
+/* TEXT */
+.internal-nav-content {
+  position: absolute;
+  left: 48px;
+  bottom: 48px;
+  z-index: 2;
+}
+
+.internal-nav-label {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+}
+
+.internal-nav-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* HOVER */
+.internal-nav-card:hover .internal-nav-overlay {
+  background: rgba(0,0,0,0.6);
+}
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .hero-text {
