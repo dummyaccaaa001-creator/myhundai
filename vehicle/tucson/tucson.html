@@ -50,8 +50,20 @@
 
 <!-- HERO -->
 <section class="hero">
-  <img src="../../assets/img/tucson/tucson-hero.webp" alt="Hyundai Tucson">
+  <picture>
+    <!-- MOBILE -->
+    <source
+      media="(max-width: 768px)"
+      srcset="../../assets/img/vehicle/tucson/new-tucson-m-414X775.avif">
+
+    <!-- DESKTOP (fallback) -->
+    <img
+      src="../../assets/img/vehicle/tucson/new-tucson-d-1920x1080.avif"
+      alt="Hyundai Tucson"
+      loading="eager">
+  </picture>
 </section>
+
 
 <!-- OVERTAKE THE ORDINARY -->
 <section class="section">
@@ -66,7 +78,7 @@
     </div>
 
     <div class="image-box">
-      <img src="../../assets/img/tucson/tucson-top.webp" alt="Hyundai Tucson Top View">
+      <img src="../../assets/img/vehicle/tucson/Overtake the ordinary_1120-x-630.avif" alt="Hyundai Tucson Top View">
     </div>
   </div>
 </section>
@@ -75,7 +87,7 @@
 <section class="section section-alt">
   <div class="container grid-two">
     <div class="image-box">
-      <img src="../../assets/img/tucson/tucson-lamp.webp" alt="Parametric Jewel Hidden Signature Lamps">
+      <img src="../../assets/img/vehicle/tucson/Overtake-the-trend_1120-x-630.avif" alt="Parametric Jewel Hidden Signature Lamps">
     </div>
 
     <div class="text-box">
@@ -89,13 +101,25 @@
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta">
-  <div class="container cta-box">
-    <h2>Tertarik dengan Hyundai Tucson?</h2>
-    <a href="https://wa.me/62XXXXXXXXXX" class="btn-primary">
-      Tanya Promo via WhatsApp
+<section class="internal-nav-section">
+  <div class="internal-nav-grid">
+
+    <a href="/" class="internal-nav-card nav-home">
+      <div class="internal-nav-overlay"></div>
+      <div class="internal-nav-content">
+        <span class="internal-nav-label">Back to</span>
+        <h3 class="internal-nav-title">Home</h3>
+      </div>
     </a>
+
+    <a href="../../vehicles.html" class="internal-nav-card nav-vehicle">
+      <div class="internal-nav-overlay"></div>
+      <div class="internal-nav-content">
+        <span class="internal-nav-label">Explore</span>
+        <h3 class="internal-nav-title">All Vehicles</h3>
+      </div>
+    </a>
+
   </div>
 </section>
 
