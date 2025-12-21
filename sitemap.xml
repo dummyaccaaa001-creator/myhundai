@@ -145,6 +145,14 @@
     <priority>0.9</priority>
   </url>
 
+    <!-- PALISADE DIESEL (REAL PATH) -->
+  <url>
+    <loc>https://hyundaimobil.co.id/vehicle/palisadiesl/palidiesel.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 
 
 </urlset>
